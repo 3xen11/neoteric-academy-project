@@ -17,9 +17,11 @@ const UserSigninForm: React.FC = (): JSX.Element => {
 
 
     return (
-        <Grid container direction='column' spacing={2}>
+        <Grid container direction='column' spacing={2} className={styles.GridContainer}>
                 <Typography 
-                variant="h4" gutterBottom>
+                variant="h4" 
+                gutterBottom
+                className={styles.HeaderText}>
                     Get started for free
                 </Typography>
 
@@ -28,9 +30,10 @@ const UserSigninForm: React.FC = (): JSX.Element => {
                     <SocialSigninButton> Sign in with Linkedin</SocialSigninButton>
                     <SocialSigninButton> Sign in with Facebook</SocialSigninButton>
     
+                <p>OR</p>
 
-                <TextfieldSigninForm LabelText="Email" Type='text' Key='1'/>
-                <TextfieldSigninForm LabelText="Password" Type='password' Key='2' />
+                <TextfieldSigninForm LabelText="Email" Type='text' Key='1' ClassName={styles.Textfield}/>
+                <TextfieldSigninForm LabelText="Password" Type='password' Key='2' ClassName={styles.Textfield}/>
                 <br/>
                 <SigninRegisterButton>Sign In</SigninRegisterButton>
 

@@ -8,9 +8,10 @@ type ChildProps = {
     Type: string,
     AutoComplete?: string,
     Key?: string,
+    ClassName?: string;
 }
 
-const TextfieldSigninForm: FC<ChildProps> = ({LabelText, Type, AutoComplete, Key}): ReactElement => {
+const TextfieldSigninForm: FC<ChildProps> = ({LabelText, Type, AutoComplete, Key, ClassName}): ReactElement => {
 
     return (
         <TextField
@@ -20,6 +21,7 @@ const TextfieldSigninForm: FC<ChildProps> = ({LabelText, Type, AutoComplete, Key
             autoComplete={AutoComplete}
             variant="outlined"
             key={Key}
+            className={ClassName}
         />
     )
 }
