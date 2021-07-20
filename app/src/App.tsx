@@ -13,8 +13,8 @@ const App: React.FC = (): JSX.Element => {
   return (
     <div>
       <UserSigninForm />
-      <UserRegisterForm />
-      <EmployerSigninForm />
+      {/* <UserRegisterForm /> */}
+      {/* <EmployerSigninForm /> */}
     </div>
   )
 }

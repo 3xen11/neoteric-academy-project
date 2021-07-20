@@ -10,7 +10,6 @@ const SigninRegisterButton: React.FC = (props): JSX.Element => {
 
   return (
     <Button
-      style={{ borderRadius: '20px' }}
       variant="contained"
       color="secondary"
       disableElevation

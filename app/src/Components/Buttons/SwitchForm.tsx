@@ -4,9 +4,6 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 
 
-
-
-
 const SwitchForm: React.FC = () => {
 
     return (
