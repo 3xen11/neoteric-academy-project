@@ -24,18 +24,20 @@ const UserSigninForm: React.FC = (): JSX.Element => {
                 className={styles.HeaderText}>
                     Get started for free
                 </Typography>
-
-                    <SocialSigninButton> Sign in with Google</SocialSigninButton>
-                    <SocialSigninButton> Sign in with Github</SocialSigninButton>
-                    <SocialSigninButton> Sign in with Linkedin</SocialSigninButton>
-                    <SocialSigninButton> Sign in with Facebook</SocialSigninButton>
-    
+                <div className={styles.SocialButtonsContainer}>
+                    <SocialSigninButton ClassName={styles['MuiButton-root']}> Sign in with Google</SocialSigninButton>
+                    <SocialSigninButton ClassName={styles['MuiButton-root']}> Sign in with Github</SocialSigninButton>
+                    <SocialSigninButton ClassName={styles['MuiButton-root']}> Sign in with Linkedin</SocialSigninButton>
+                    <SocialSigninButton ClassName={styles['MuiButton-root']}> Sign in with Facebook</SocialSigninButton>
+                </div>
                 <p>OR</p>
 
-                <TextfieldSigninForm LabelText="Email" Type='text' Key='1' ClassName={styles.Textfield}/>
-                <TextfieldSigninForm LabelText="Password" Type='password' Key='2' ClassName={styles.Textfield}/>
+                
+                <div className={styles.TextfieldContainer}><i className="fas fa-user"></i><TextfieldSigninForm LabelText="Email" Type='text' Key='1' ClassName={styles.Textfield}/></div>
+                <div className={styles.TextfieldContainer}><i className="fas fa-lock"></i><TextfieldSigninForm LabelText="Password" Type='password' Key='2' ClassName={styles.Textfield}/></div>
+                
                 <br/>
-                <SigninRegisterButton>Sign In</SigninRegisterButton>
+               <SigninRegisterButton ClassName={styles.SigninRegisterButton}>Sign In</SigninRegisterButton>
 
 
             <p>New Account? <a href='#'>Register</a></p>
