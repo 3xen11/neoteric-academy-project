@@ -1,7 +1,9 @@
+//IMPORT TYPE
 import React, { FC, ReactElement } from 'react';
+
 //IMPROTS FROM MATERIAL UI
 import TextField from '@material-ui/core/TextField';
-//IMPORTS STYLES
+
 
 type ChildProps = {
     LabelText: string,
@@ -11,17 +13,19 @@ type ChildProps = {
     ClassName?: string;
 }
 
-const TextfieldSigninForm: FC<ChildProps> = ({LabelText, Type, AutoComplete, Key, ClassName}): ReactElement => {
+const TextfieldSigninForm: FC<ChildProps> = (props): ReactElement => {
 
     return (
         <TextField
             id="outlined-password-input"
-            label={LabelText}
-            type={Type}
-            autoComplete={AutoComplete}
+            label={props.LabelText}
+            type={props.Type}
+            autoComplete={props.AutoComplete}
             variant="outlined"
-            key={Key}
-            className={ClassName}
+            key={props.Key}
+            className={props.ClassName}
+            inputProps={{ style: { fontSize: 15 } }}
+            InputLabelProps={{ style: { fontSize: 15 } }} //poprawić wielkość wcięcia po kliknięciue (za duży tekst)
         />
     )
 }

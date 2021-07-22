@@ -1,17 +1,21 @@
+//IMPORT TYPE
 import React, { FC, ReactElement } from 'react';
+
 //IMPROTS FROM MATERIAL UI
 import Button from '@material-ui/core/Button';
 
-//IMPORTS STYLES
+
+
+
+
 
 type ChildProps = {
-    ClassName?: string,
-    children?: string,
+  ClassName?: string,
+  children?: string,
 }
 
 
-
-const SigninRegisterButton: FC<ChildProps> = (props): JSX.Element => {
+const AcceptButton: FC<ChildProps> = (props): ReactElement => {
 
   return (
     <Button
@@ -24,4 +28,4 @@ const SigninRegisterButton: FC<ChildProps> = (props): JSX.Element => {
   )
 }
 
-export default SigninRegisterButton
+export default AcceptButton;

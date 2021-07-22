@@ -1,0 +1,5 @@
+app>src>components>textfields>'textfieldsigninform.tsx' (28): poprawić wielkość wcięcia po kliknięciue (za duży tekst)
+
+app>src>styles>componentsstyles>'_acceptbutton.module.scss' (91): nie łapie zmiennej
+
+app>src>components>ui>'signincard.tsx' (12): zmienić typ any na prawidłowy
