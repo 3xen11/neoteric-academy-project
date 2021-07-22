@@ -3,3 +3,6 @@ app>src>components>textfields>'textfieldsigninform.tsx' (28): poprawić wielkoś
 app>src>styles>componentsstyles>'_acceptbutton.module.scss' (91): nie łapie zmiennej
 
 app>src>components>ui>'signincard.tsx' (12): zmienić typ any na prawidłowy
+
+app>app>src>pages>signinregisterpages>'userregisterform.tsx' + 'usersigninform.tsx' (39-42): wyskakuje błąd o typie, ale wszystko działa bez problemu (loga do sociali)
+

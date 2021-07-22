@@ -10,6 +10,12 @@ import AcceptButton from "../../Components/Buttons/AcceptButton";
 import TextfieldSigninForm from "../../Components/TextFields/TextfieldSigninForm";
 import SocialSigninButton from "../../Components/Buttons/SocialSignin";
 
+//IMPORTS SVG SOCIAL-LOGO
+import { ReactComponent as FacebookLogo } from '../../img/facebook.svg'
+import { ReactComponent as GithubLogo } from '../../img/github.svg'
+import { ReactComponent as GoogleLogo } from '../../img/google.svg'
+import { ReactComponent as LinkedinLogo } from '../../img/linkedin.svg'
+
 //IMPORTS STYLES
 import styles from '../../Styles/ComponentesStyles/_UserSigninForm.module.scss'
 
@@ -28,11 +34,12 @@ const UserSigninForm: FC = (): ReactElement => {
                 Get started for free
             </Typography>
 
+           
             <div className={styles['social-container']}>
-                <SocialSigninButton ClassName={styles['social-container__button']}>Sign in with Google</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}>Sign in with Github</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}>Sign in with Linkedin</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}>Sign in with Facebook</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><GoogleLogo className={styles['social-logo']} />Sign in with Google</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><GithubLogo className={styles['social-logo']} />Sign in with Github</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><LinkedinLogo className={styles['social-logo']} />Sign in with Linkedin</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><FacebookLogo className={styles['social-logo']} />Sign in with Facebook</SocialSigninButton>
             </div>
 
             <p>OR</p>

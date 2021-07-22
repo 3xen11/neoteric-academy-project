@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 //IMPORTS COMPONENTS
 import AcceptButton from "../../Components/Buttons/AcceptButton";
 import TextfieldSigninForm from "../../Components/TextFields/TextfieldSigninForm";
-import SwitchForm from "../../Components/Buttons/SwitchForm";
+import SwitchForm from "../../Components/Buttons/Checkbox";
 import SigninCard from '../../Components/UI/SigninCard';
 
 //IMPORTS STYLES
@@ -36,7 +36,7 @@ const EmployerSigninForm: FC = (): ReactElement => {
                 <AcceptButton ClassName={styles['accept-button']}>Sign In</AcceptButton>
 
                 <p><a href='#'>Forgot password?</a></p>
-
+                
             </SigninCard>
 
         </div>
