@@ -1,5 +1,5 @@
 //IMPORT TYPE
-import React, { FC, ReactElement } from 'react';
+import React from 'react';
 
 //IMPROTS FROM MATERIAL UI
 import Checkbox from '@material-ui/core/Checkbox';
@@ -7,20 +7,19 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 
 
-
-type ChildProps = {
-    ClassName?: string,
+type ComponentProps = {
+    readonly ClassName?: string,
 }
 
 
-const CheckboxForm: FC<ChildProps> = (props): ReactElement => {
+const CheckboxForm = React.memo<ComponentProps>(({ ClassName }) => {
 
     return (
-        <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} className={props.ClassName} style={{
+        <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} className={ClassName} style={{
             transform: "scale(1.4)",
         }} />
     )
 
-}
+})
 
 export default CheckboxForm

@@ -1,21 +1,22 @@
 //IMPORT TYPE
-//! DODAĆ TYP
+import React, { ReactNode } from "react"
 
 
 
+type ComponentProps = {
+  ClassName?: string,
+  children?: ReactNode
+}
 
 
 
-
-
-
-const SigninCard = (props: any) => {
+const SigninCard = React.memo<ComponentProps>(({ ClassName, children }) => {
 
   return (
-    <div className={props.ClassName}>
-      {props.children}
+    <div className={ClassName}>
+      {children}
     </div>
   )
-}
+})
 
 export default SigninCard

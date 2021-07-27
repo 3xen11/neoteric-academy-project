@@ -1,31 +1,31 @@
 //IMPORT TYPE
-import React, { FC, ReactElement } from 'react';
+import React, { ReactNode } from 'react';
 
 //IMPROTS FROM MATERIAL UI
 import Button from '@material-ui/core/Button';
 
 
 
-
-
-
-type ChildProps = {
-  ClassName?: string,
-  children?: string,
+type ComponentProps = {
+  readonly ClassName?: string,
+  readonly children: ReactNode,
 }
 
 
-const AcceptButton: FC<ChildProps> = (props): ReactElement => {
+
+
+
+const AcceptButton = React.memo<ComponentProps>(({ ClassName, children }) => {
 
   return (
     <Button
       variant="contained"
       color="secondary"
       disableElevation
-      className={props.ClassName}>
-      {props.children}
+      className={ClassName}>
+      {children}
     </Button>
   )
-}
+})
 
 export default AcceptButton;

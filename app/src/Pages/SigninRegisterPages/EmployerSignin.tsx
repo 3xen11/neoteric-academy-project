@@ -1,6 +1,3 @@
-//IMPORT TYPE
-import React, { FC, ReactElement } from 'react';
-
 //IMPORTS FROM MATERIAL UI
 import Typography from '@material-ui/core/Typography';
 
@@ -16,7 +13,7 @@ import styles from "../../Styles/ComponentesStyles/_SigninCard.module.scss"
 
 
 
-const EmployerSigninForm: FC = (): ReactElement => {
+const EmployerSigninForm = () => {
 
 
     return (
@@ -36,7 +33,7 @@ const EmployerSigninForm: FC = (): ReactElement => {
                 <AcceptButton ClassName={styles['accept-button']}>Sign In</AcceptButton>
 
                 <p><a href='#'>Forgot password?</a></p>
-                
+
             </SigninCard>
 
         </div>

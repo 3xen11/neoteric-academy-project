@@ -1,0 +1,48 @@
+.list-container {
+    width: 100vw !important;
+
+    .header-text {
+        margin-left: 15px;
+    }
+}
+
+.accordion {
+    display: flex;
+    justify-content: flex-start !important;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+
+    .list-container {
+
+        width: 300px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .responsive-list-part {
+        display: none;
+    }
+}
+
+.responsive-list-part--hidden {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .responsive-list-part--hidden {
+        display: block;
+    }
+}
+
+
+
+.quit-button {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}

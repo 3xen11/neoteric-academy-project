@@ -1,34 +1,27 @@
 //IMPORT TYPE
-import React, { FC, ReactElement } from 'react';
+import React, { ReactNode } from 'react';
 
 //IMPROTS FROM MATERIAL UI
 import Button from '@material-ui/core/Button';
 
 
+type ComponentProps = {
+    readonly ClassName?: string,
+    readonly children?: ReactNode,
+}
 
 
 
-
-// type ChildProps = {
-//     ClassName?: string,
-//     children?: string,
-// }
-
-// const SocialSigninButton: FC<ChildProps> = (props): ReactElement => {
-
-
-
-
-const SocialSigninButton = (props: any) => {
+const SocialSigninButton = React.memo<ComponentProps>(({ ClassName, children }) => {
 
     return (
         <Button
-            className={props.ClassName}
+            className={ClassName}
             size='large'
             variant="contained">
-            {props.children}
+            {children}
         </Button>
     )
-}
+});
 
 export default SocialSigninButton;

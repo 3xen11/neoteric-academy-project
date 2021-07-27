@@ -5,7 +5,7 @@ import React, { FC, ReactElement } from 'react';
 import TextField from '@material-ui/core/TextField';
 
 
-type ChildProps = {
+type ComponentProps = {
     LabelText: string,
     Type: string,
     AutoComplete?: string,
@@ -13,7 +13,7 @@ type ChildProps = {
     ClassName?: string;
 }
 
-const TextfieldSigninForm: FC<ChildProps> = (props): ReactElement => {
+const TextfieldSigninForm: FC<ComponentProps> = (props) => {
 
     return (
         <TextField

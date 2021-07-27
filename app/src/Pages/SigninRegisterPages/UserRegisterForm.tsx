@@ -1,6 +1,3 @@
-//IMPORT TYPE
-import React, { FC, ReactElement } from 'react';
-
 //IMPORTS FROM MATERIAL UI
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -24,7 +21,7 @@ import styles from "../../Styles/ComponentesStyles/_UserSigninForm.module.scss"
 
 
 
-const UserRegisterForm: FC = (): ReactElement => {
+const UserRegisterForm = () => {
 
 
     return (
@@ -37,10 +34,10 @@ const UserRegisterForm: FC = (): ReactElement => {
             </Typography>
 
             <div className={styles['social-container']}>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={GoogleLogo} className={styles['social-logo']} alt='logo-google'/>Register with Google</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={GithubLogo} className={styles['social-logo']} alt='logo-github'/>Register with Github</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={LinkedinLogo} className={styles['social-logo']} alt='logo-linkedin'/>Register with Linkedin</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={FacebookLogo} className={styles['social-logo']} alt='logo-facebook'/>Register with Facebook</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><img src={GoogleLogo} className={styles['social-logo']} alt='logo-google' />Register with Google</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><img src={GithubLogo} className={styles['social-logo']} alt='logo-github' />Register with Github</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><img src={LinkedinLogo} className={styles['social-logo']} alt='logo-linkedin' />Register with Linkedin</SocialSigninButton>
+                <SocialSigninButton ClassName={styles['social-container__button']}><img src={FacebookLogo} className={styles['social-logo']} alt='logo-facebook' />Register with Facebook</SocialSigninButton>
             </div>
 
             <p>OR</p>
