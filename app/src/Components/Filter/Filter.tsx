@@ -1,16 +1,17 @@
-import FilterButton from "./FilterButton"
 import styles from '../../Styles/ComponentesStyles/_Filter.module.scss'
+import OutlinedButton from "../Buttons/OutlinedButton"
+
 
 const Filter = () => {
 
 
     return (
         <div className={styles['filter-button-container']}>
-            <FilterButton OnClick={'.'}> Lupa </FilterButton>
-            <FilterButton OnClick={'.'}> Location </FilterButton>
-            <FilterButton OnClick={'.'}> Tech </FilterButton>
-            <FilterButton OnClick={'.'}> More filters </FilterButton>
-            <FilterButton OnClick={'.'}> Latest </FilterButton>
+            <OutlinedButton OnClick={'.'}> Lupa </OutlinedButton>
+            <OutlinedButton OnClick={'.'}> Location </OutlinedButton>
+            <OutlinedButton OnClick={'.'}> Tech </OutlinedButton>
+            <OutlinedButton OnClick={'.'}> More filters </OutlinedButton>
+            <OutlinedButton OnClick={'.'}> Latest </OutlinedButton>
         </div>
     )
 }

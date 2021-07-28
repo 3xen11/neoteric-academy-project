@@ -1,5 +1,6 @@
 .navbar-container {
     display: flex;
+    align-items: center;
 
     &__login-button {
         display: block !important;
@@ -20,7 +21,7 @@
         width: 100%;
         justify-content: flex-end;
         margin-right: 160px;
-        margin-top: 10px;
+        align-items: center;
 
         &--link-offers {
             font-size: 1.4rem;
@@ -35,6 +36,8 @@
             color: gray;
             font-weight: bold;
             margin-left: 30px;
+            display: flex;
+            align-self: center;
         }
 
         &--link:hover {
@@ -47,6 +50,7 @@
     @media (min-width: 1024px) {
         &__links {
             display: flex;
+            align-items: center;
         }
     }
 }

@@ -2,7 +2,7 @@ import Navbar from "../Components/Navigation/Navbar"
 import Filter from "../Components/Filter/Filter"
 import { Button } from "@material-ui/core"
 
-import styles from '../Styles/ComponentesStyles/_MainPage.module.scss'
+import styles from '../Styles/PagesStyles/_MainPage.module.scss'
 
 
 const MainPage = () => {

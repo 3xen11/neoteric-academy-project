@@ -1,4 +1,6 @@
-.accept-button {
+@use '../variables.module'as *;
+
+.primary-button {
     border-radius: 20px;
     width: 200px;
     margin: 20px auto 0 auto;

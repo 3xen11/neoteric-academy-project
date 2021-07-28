@@ -1,9 +1,13 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
 import SigninListButton from './SigninListButton';
+
+import OutlinedButton from '../Buttons/OutlinedButton';
+
+//IMPORT REACT ROUTER
+import { Link } from 'react-router-dom'
 
 import styles from '../../Styles/ComponentesStyles/_SigninPopupCard.module.scss'
 
@@ -21,9 +25,9 @@ const SigninButtons = () => {
 
     return (
         <div>
-            <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
+            <OutlinedButton aria-controls="fade-menu" aria-haspopup="true" OnClick={handleClick}>
                 Sign in
-            </Button>
+            </OutlinedButton>
             <Menu
                 id="fade-menu"
                 anchorEl={anchorEl}
@@ -34,8 +38,9 @@ const SigninButtons = () => {
 
 
             >
-                <div className={styles['card']}><SigninListButton ClassName={styles['signin-popup']}>Sign in as a developer</SigninListButton>
-                    <SigninListButton ClassName={styles['signin-popup']}>Sign in to Employer Panel</SigninListButton></div>
+                <div className={styles['card']}>
+                    <Link to='/user-signin'> <SigninListButton ClassName={styles['signin-popup']}>Sign in as a developer</SigninListButton></Link>
+                    <Link to='/employer-signin'><SigninListButton ClassName={styles['signin-popup']}>Sign in to Employer Panel</SigninListButton></Link></div>
 
 
             </Menu>

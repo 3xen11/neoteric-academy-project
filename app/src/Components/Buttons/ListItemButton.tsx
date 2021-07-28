@@ -1,15 +1,43 @@
+//IMPORTS FROM REACT
+import React, { ReactNode } from 'react';
+
+//IMPORTS FROM MATERIAL UI
 import { Button } from '@material-ui/core';
-import styles from '../../Styles/ComponentesStyles/_ListItemButton.module.scss'
+
+//IMPORTS STYLES
+import styled from 'styled-components'
 
 
-const ListItemButton = ({ children }) => {
+
+
+type ComponentProps = {
+    readonly children: ReactNode,
+    readonly ClassName?: string
+}
+
+
+const ListItemButton = React.memo<ComponentProps>(({ children, ClassName }) => {
 
 
     return (
         <div>
-            <Button variant="contained" className={styles['accordion__list-item-text']}>{children}</Button>
+            <ListeItemButton variant="contained" className={ClassName}>{children}</ListeItemButton>
         </div>
     )
-}
+})
 
 export default ListItemButton;
+
+//STYLED COMPONENTS
+
+const ListeItemButton = styled(Button)`
+    width: 100%;
+    margin: 0 !important;
+    display: flex;
+    text-align: left !important;
+    background-color: white !important;
+    border-radius: none;
+    border: none !important;
+    box-shadow: none !important;
+    height: 40px;
+`;

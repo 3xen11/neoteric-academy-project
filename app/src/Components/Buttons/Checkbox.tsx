@@ -1,4 +1,4 @@
-//IMPORT TYPE
+//IMPORTS FROM REACT
 import React from 'react';
 
 //IMPROTS FROM MATERIAL UI

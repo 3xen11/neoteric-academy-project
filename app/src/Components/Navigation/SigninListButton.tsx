@@ -1,8 +1,16 @@
+//IMPORT TYPE
+import React, { ReactNode } from 'react';
+
 import { Button } from '@material-ui/core';
 import styles from '../../Styles/ComponentesStyles/_SigninListButton.module.scss'
 
 
-const SigninListButton = ({ children, ClassName }) => {
+type ComponentProps = {
+    readonly ClassName?: string,
+    readonly children?: ReactNode,
+}
+
+const SigninListButton = React.memo<ComponentProps>(({ ClassName, children }) => {
 
 
     return (
@@ -10,6 +18,6 @@ const SigninListButton = ({ children, ClassName }) => {
             <Button variant="contained" className={`${styles['signin-button']} ${ClassName}`}>{children}</Button>
         </div >
     )
-}
+})
 
 export default SigninListButton;

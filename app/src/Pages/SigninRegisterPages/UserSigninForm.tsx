@@ -1,22 +1,24 @@
-//IMPORTS FROM MATERIAL UI
+//IMPORT FROM MATERIAL UI
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-//IMPORTS COMPONENTS
-import AcceptButton from "../../Components/Buttons/AcceptButton";
+//IMPORT COMPONENTS
+import MainButton from "../../Components/Buttons/MainButton";
 import TextfieldSigninForm from "../../Components/TextFields/TextfieldSigninForm";
-import SocialSigninButton from "../../Components/Buttons/SocialSignin";
+import SocialSigninButton from "../../Components/Buttons/SocialSigninButton";
 
-//IMPORTS SVG SOCIAL-LOGO
+//IMPORT SVG SOCIAL-LOGO
 import FacebookLogo from '../../img/facebook.svg'
 import GithubLogo from '../../img/github.svg'
 import GoogleLogo from '../../img/google.svg'
 import LinkedinLogo from '../../img/linkedin.svg'
 
-//IMPORTS STYLES
-import styles from '../../Styles/ComponentesStyles/_UserSigninForm.module.scss'
-import { exception } from 'node:console';
+//IMPORT STYLES
+import styles from '../../Styles/PagesStyles/_UserSigninForm.module.scss'
+import styled from 'styled-components'
 
+//IMPORT REACT ROUTER
+import { Link } from 'react-router-dom'
 
 
 const UserSigninForm = () => {
@@ -48,10 +50,10 @@ const UserSigninForm = () => {
             <div className={styles['textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm LabelText="Password" Type='password' Key='2' ClassName={styles['textfield-container__input']} /></div>
 
             <br />
-            <AcceptButton ClassName={styles['accept-button']}>Sign In</AcceptButton>
+            <MainButton ClassName={styles['main-button']}>Sign In</MainButton>
 
 
-            <p>New Account? <a href='#'>Register</a></p>
+            <p>New Account? <Link to='/user-register'>Register</Link></p>
 
             <p><a href='#'>Forgot password?</a></p>
 

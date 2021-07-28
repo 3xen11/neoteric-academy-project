@@ -22,15 +22,10 @@
         flex-direction: column;
 
         &__button {
+            background-color: white !important;
             max-width: 1000px;
-            background-color: white;
             margin-top: 1vh;
-            box-shadow: none;
-            border: 1px solid rgba(128, 128, 128, 0.426);
-            border-radius: 50px;
-            text-transform: none;
             display: flex;
-            font-size: 1.4rem;
         }
     }
 
@@ -149,4 +144,8 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+
+.main-button {
+    margin: 20px auto 0 auto !important;
 }

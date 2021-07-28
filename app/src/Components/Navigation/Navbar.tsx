@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 
 //IMPORTS COMPONENTS
 import TemporaryDrawer from "./TemporaryDrawer"
-import AcceptButton from "../Buttons/AcceptButton"
+import MainButton from "../Buttons/MainButton"
 import NavbarLink from './NavbarLink';
 //IMPORT STYLE
 import styles from '../../Styles/ComponentesStyles/_Navbar.module.scss'
@@ -21,9 +21,9 @@ const Navbar = React.memo<ComponentProps>(({ ClassName, children }) => {
         <div>
             <div className={styles['navbar-container']}>
 
-                <h2>justjoin.it - #1 jebania biedy w polsce</h2>
+                <h1>justjoin.it</h1>
 
-                <AcceptButton ClassName={styles['navbar-container__login-button']}>Sign in</AcceptButton>
+
                 <TemporaryDrawer ClassName={styles['navbar-container__drawer']} />
 
                 <div className={styles['navbar-container__links']}>
@@ -31,7 +31,7 @@ const Navbar = React.memo<ComponentProps>(({ ClassName, children }) => {
                     <NavbarLink link='#' ClassName={styles['navbar-container__links--link']}>Brand Stories</NavbarLink>
                     <NavbarLink link='#' ClassName={styles['navbar-container__links--link']}>Geek</NavbarLink>
                     <NavbarLink link='#' ClassName={styles['navbar-container__links--link']}>Matchmaking</NavbarLink>
-                    <AcceptButton>Post a Job</AcceptButton>
+                    <MainButton>Post a Job</MainButton>
                     <SigninButtons />
                 </div>
 

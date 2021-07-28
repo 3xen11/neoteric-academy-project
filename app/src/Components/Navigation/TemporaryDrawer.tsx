@@ -8,13 +8,13 @@ import SimpleAccordion from './SimpleAccordion';
 import ListItemButton from '../Buttons/ListItemButton';
 
 //IMPORTS STYLE
-
 import styles from '../../Styles/ComponentesStyles/_Drawer.module.scss';
+
+//IMPORT REACT ROUTER
+import { Link } from 'react-router-dom'
 
 
 type Anchor = 'right';
-
-
 
 export default function TemporaryDrawer(props: any) {
 
@@ -87,8 +87,8 @@ export default function TemporaryDrawer(props: any) {
                 <ListItemButton> Help </ListItemButton>
                 <ListItemButton> Terms </ListItemButton>
             </List>
-            <SigninListButton ClassName={''}>Sign in as a developrt</SigninListButton>
-            <SigninListButton ClassName={''}>Sign in to Employer Panel</SigninListButton>
+            <Link to='/user-signin'> <SigninListButton ClassName={''}>Sign in as a developr</SigninListButton></Link>
+            <Link to='/employer-signin'> <SigninListButton ClassName={''}>Sign in to Employer Panel</SigninListButton></Link>
         </div>
     );
 

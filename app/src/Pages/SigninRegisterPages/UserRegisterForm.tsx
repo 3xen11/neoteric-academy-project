@@ -1,11 +1,15 @@
+//IMPORTS FROM REACT
+import { Link } from 'react-router-dom'
+
+
 //IMPORTS FROM MATERIAL UI
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 //IMPORTS COMPONENTS
-import AcceptButton from "../../Components/Buttons/AcceptButton";
+import MainButton from "../../Components/Buttons/MainButton";
 import TextfieldSigninForm from "../../Components/TextFields/TextfieldSigninForm";
-import SocialSigninButton from "../../Components/Buttons/SocialSignin";
+import SocialSigninButton from "../../Components/Buttons/SocialSigninButton";
 import CheckboxForm from "../../Components/Buttons/Checkbox";
 
 //IMPORTS SVG SOCIAL-LOGO
@@ -16,8 +20,7 @@ import LinkedinLogo from '../../img/linkedin.svg'
 
 
 //IMPORTS STYLES
-import styles from "../../Styles/ComponentesStyles/_UserSigninForm.module.scss"
-
+import styles from "../../Styles/PagesStyles/_UserSigninForm.module.scss"
 
 
 
@@ -50,9 +53,9 @@ const UserRegisterForm = () => {
 
             <p> <CheckboxForm />I accept <a href='#'>terms</a> of service</p>
 
-            <AcceptButton ClassName={styles['accept-button']}>Register</AcceptButton>
+            <MainButton ClassName={styles['main-button']}>Register</MainButton>
 
-            <p>Already have an account? <a href='#'>Sign in</a></p>
+            <p>Already have an account? <Link to='/user-signin'>Sign in</Link></p>
             <p><a href='#'>Forgot password?</a></p>
 
         </Grid>
