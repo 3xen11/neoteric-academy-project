@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import SigninListButton from './SigninListButton';
-import SimpleAccordion from './SimpleAccordion';
+import SimpleAccordion from './DrawerAccordion';
 import ListItemButton from '../Buttons/ListItemButton';
 
 //IMPORTS STYLE
@@ -68,8 +68,8 @@ export default function TemporaryDrawer(props: any) {
             </div>
 
             <SimpleAccordion
-                ClassName={styles['responsive-list-part']}
-                AccordionContent={
+                className={styles['responsive-list-part']}
+                accordionContent={
                     <div className={styles['accordion']}>
                         <ListItemButton> Śniadanie z programowaniem </ListItemButton>
                         <ListItemButton> Just join Olympics </ListItemButton>
@@ -87,8 +87,8 @@ export default function TemporaryDrawer(props: any) {
                 <ListItemButton> Help </ListItemButton>
                 <ListItemButton> Terms </ListItemButton>
             </List>
-            <Link to='/user-signin'> <SigninListButton ClassName={''}>Sign in as a developr</SigninListButton></Link>
-            <Link to='/employer-signin'> <SigninListButton ClassName={''}>Sign in to Employer Panel</SigninListButton></Link>
+            <Link to='/user-signin'> <SigninListButton className={''}>Sign in as a developr</SigninListButton></Link>
+            <Link to='/employer-signin'> <SigninListButton className={''}>Sign in to Employer Panel</SigninListButton></Link>
         </div>
     );
 

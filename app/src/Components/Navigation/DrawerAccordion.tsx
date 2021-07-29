@@ -7,27 +7,27 @@ import Typography from '@material-ui/core/Typography';
 
 
 
-import styles from '../../Styles/ComponentesStyles/_Navbar.module.scss'
+import styles from '../../Styles/ComponentesStyles/ButtonsStyles/_DrawerAccordion.module.scss'
 
 
 type ComponentProps = {
-    readonly ClassName?: string,
-    readonly AccordionContent?: ReactNode,
+    readonly className?: string,
+    readonly accordionContent?: ReactNode,
 }
 
-const SimpleAccordion = React.memo<ComponentProps>(({ ClassName, AccordionContent }) => {
+const SimpleAccordion = React.memo<ComponentProps>(({ className, accordionContent }) => {
 
     return (
-        <div className={ClassName}>
+        <div className={className}>
             <Accordion>
                 <AccordionSummary
                     className={styles['accordion-title']}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography>More</Typography>
+                    <Typography className={styles['accordion-button']}>More</Typography>
                 </AccordionSummary>
-                {AccordionContent}
+                {accordionContent}
             </Accordion>
 
         </div>

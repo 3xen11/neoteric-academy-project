@@ -4,16 +4,16 @@ import React, { ReactNode } from "react"
 
 
 type ComponentProps = {
-  ClassName?: string,
+  className?: string,
   children?: ReactNode
 }
 
 
 
-const SigninCard = React.memo<ComponentProps>(({ ClassName, children }) => {
+const SigninCard = React.memo<ComponentProps>(({ className, children }) => {
 
   return (
-    <div className={ClassName}>
+    <div className={className}>
       {children}
     </div>
   )

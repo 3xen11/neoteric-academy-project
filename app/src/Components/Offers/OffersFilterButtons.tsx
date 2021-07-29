@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import styles from '../../Styles/ComponentesStyles/_FilterButton.module.scss'
 
 
-const OffersFilterButton = ({ children, OnClick }) => {
+const OffersFilterButton = ({ children, onClick }) => {
 
 
     return (

@@ -5,7 +5,8 @@ import Grid from '@material-ui/core/Grid';
 //IMPORT COMPONENTS
 import MainButton from "../../Components/Buttons/MainButton";
 import TextfieldSigninForm from "../../Components/TextFields/TextfieldSigninForm";
-import SocialSigninButton from "../../Components/Buttons/SocialSigninButton";
+import SocialButton from "../../Components/Buttons/SocialButton";
+import Navbar from '../../Components/Navigation/Navbar';
 
 //IMPORT SVG SOCIAL-LOGO
 import FacebookLogo from '../../img/facebook.svg'
@@ -15,7 +16,7 @@ import LinkedinLogo from '../../img/linkedin.svg'
 
 //IMPORT STYLES
 import styles from '../../Styles/PagesStyles/_UserSigninForm.module.scss'
-import styled from 'styled-components'
+
 
 //IMPORT REACT ROUTER
 import { Link } from 'react-router-dom'
@@ -25,39 +26,43 @@ const UserSigninForm = () => {
 
 
     return (
-        <Grid container direction='column' spacing={2} className={styles['form-container']}>
-
-            <Typography
-                variant="h4"
-                gutterBottom
-                className={styles['header-text']}>
-                Get started for free
-            </Typography>
+        <div>
+            <Navbar />
+            <Grid container direction='column' spacing={2} className={styles['form-container']}>
 
 
-            <div className={styles['social-container']}>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={GoogleLogo} className={styles['social-logo']} alt='logo-google' />Register with Google</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={GithubLogo} className={styles['social-logo']} alt='logo-github' />Register with Github</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={LinkedinLogo} className={styles['social-logo']} alt='logo-linkedin' />Register with Linkedin</SocialSigninButton>
-                <SocialSigninButton ClassName={styles['social-container__button']}><img src={FacebookLogo} className={styles['social-logo']} alt='logo-facebook' />Register with Facebook</SocialSigninButton>
-            </div>
-
-            <p>OR</p>
+                <Typography
+                    variant="h4"
+                    gutterBottom
+                    className={styles['header-text']}>
+                    Get started for free
+                </Typography>
 
 
-            <div className={styles['textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm LabelText="Email" Type='text' Key='1' ClassName={styles['textfield-container__input']} /></div>
+                <div className={styles['social-container']}>
+                    <SocialButton className={styles['social-container__button']}><img src={GoogleLogo} className={styles['social-logo']} alt='logo-google' />Register with Google</SocialButton>
+                    <SocialButton className={styles['social-container__button']}><img src={GithubLogo} className={styles['social-logo']} alt='logo-github' />Register with Github</SocialButton>
+                    <SocialButton className={styles['social-container__button']}><img src={LinkedinLogo} className={styles['social-logo']} alt='logo-linkedin' />Register with Linkedin</SocialButton>
+                    <SocialButton className={styles['social-container__button']}><img src={FacebookLogo} className={styles['social-logo']} alt='logo-facebook' />Register with Facebook</SocialButton>
+                </div>
 
-            <div className={styles['textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm LabelText="Password" Type='password' Key='2' ClassName={styles['textfield-container__input']} /></div>
-
-            <br />
-            <MainButton ClassName={styles['main-button']}>Sign In</MainButton>
+                <p>OR</p>
 
 
-            <p>New Account? <Link to='/user-register'>Register</Link></p>
+                <div className={styles['textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm labelText="Email" type='text' key='1' className={styles['textfield-container__input']} /></div>
 
-            <p><a href='#'>Forgot password?</a></p>
+                <div className={styles['textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm labelText="Password" type='password' key='2' className={styles['textfield-container__input']} /></div>
 
-        </Grid>
+                <br />
+                <MainButton className={styles['main-button']}>Sign In</MainButton>
+
+
+                <p>New Account? <Link to='/user-register'>Register</Link></p>
+
+                <p><a href='#'>Forgot password?</a></p>
+
+            </Grid>
+        </div>
     )
 }
 

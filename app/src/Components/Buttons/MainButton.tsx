@@ -5,43 +5,31 @@ import React, { ReactNode } from 'react';
 import Button from '@material-ui/core/Button';
 
 //IMPORTS STYLES
-import styled from 'styled-components'
+import styles from '../../Styles/ComponentesStyles/ButtonsStyles/_MainButton.module.scss'
 
 
 type ComponentProps = {
   readonly children: ReactNode,
-  readonly ClassName?: string
+  readonly className?: string
+  readonly onClick?: any
 }
 
 
 
-const MainButton = React.memo<ComponentProps>(({ children, ClassName }) => {
+const MainButton = React.memo<ComponentProps>(({ children, className }) => {
 
 
 
   return (
-    <StylledButton
+    <Button
       variant="contained"
       disableElevation
-      className={ClassName}
+      className={`${styles['main-button']} ${className}`}
     >
-
       {children}
-    </StylledButton>
+    </Button>
   )
 })
 
 export default MainButton;
 
-
-
-//STYLED COMPONENTS
-const StylledButton = styled(Button)`
-  border-radius: 50px !important;
-  width: 150px !important;
-  text-transform: none !important;
-  background-color: #ff5387 !important;
-  font-size: 1.5rem !important;
-  color: white !important;
-     height: 40px !important;
-`;

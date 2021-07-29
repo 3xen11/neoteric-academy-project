@@ -2,20 +2,20 @@
 import React, { ReactNode } from 'react';
 
 import { Button } from '@material-ui/core';
-import styles from '../../Styles/ComponentesStyles/_SigninListButton.module.scss'
+import styles from '../../Styles/ComponentesStyles/ButtonsStyles/_SigninListButton.module.scss'
 
 
 type ComponentProps = {
-    readonly ClassName?: string,
+    readonly className?: string,
     readonly children?: ReactNode,
 }
 
-const SigninListButton = React.memo<ComponentProps>(({ ClassName, children }) => {
+const SigninListButton = React.memo<ComponentProps>(({ className, children }) => {
 
 
     return (
         <div>
-            <Button variant="contained" className={`${styles['signin-button']} ${ClassName}`}>{children}</Button>
+            <Button variant="contained" className={`${styles['signin-button']} ${className}`}>{children}</Button>
         </div >
     )
 })

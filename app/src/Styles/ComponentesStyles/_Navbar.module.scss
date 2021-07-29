@@ -1,56 +1,111 @@
 .navbar-container {
     display: flex;
     align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(143, 143, 143, 0.616);
+    width: 100%;
+    justify-content: space-between;
 
-    &__login-button {
-        display: block !important;
-        position: absolute !important;
-        top: 5px;
-        right: 60px;
-    }
 
-    &__drawer {
-        display: block !important;
-        position: absolute !important;
-        top: 5px;
-        right: 0px;
-    }
 
-    &__links {
-        display: none;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 160px;
-        align-items: center;
+    .logo-motto-container {
+        display: flex;
+        padding-left: 20px;
 
-        &--link-offers {
-            font-size: 1.4rem;
-            text-decoration: none;
-            color: pink;
+
+        .main-logo {
+            text-decoration: none !important;
+            color: #202020cf !important;
+            font-size: 2.5rem;
             font-weight: bold;
+            padding-bottom: 0.5%;
         }
 
-        &--link {
-            font-size: 1.4rem;
-            text-decoration: none;
-            color: gray;
-            font-weight: bold;
-            margin-left: 30px;
-            display: flex;
-            align-self: center;
-        }
-
-        &--link:hover {
-            color: pink;
-        }
-    }
-
-
-
-    @media (min-width: 1024px) {
-        &__links {
-            display: flex;
+        .main-motto {
+            display: none;
+            color: #808080ca;
+            margin-left: 5%;
+            width: 200px;
             align-items: center;
         }
+
+
+        @media (min-width: 1024px) {
+            .main-motto {
+                display: flex;
+            }
+        }
     }
+
+    .links-buttons-container {
+        display: flex;
+
+
+        .navbar-container-buttons {
+            display: flex;
+            justify-content: flex-end;
+
+            .main-button {
+                display: none;
+                margin: 3% 2% !important;
+            }
+
+            .signin-button {
+                margin: 7.5% 2% !important;
+                display: flex;
+            }
+
+            .navbar-container__drawer {
+                border-left: 1px solid gray;
+            }
+
+        }
+
+
+        .navbar-container__links {
+            display: none;
+
+
+            .navbar-container__links {
+                display: none !important;
+                justify-content: flex-end;
+
+
+
+                &--link-offers {
+                    color: #ff5387 !important;
+                    text-align: center;
+
+                }
+
+
+            }
+        }
+
+    }
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .navbar-container__links {
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+        width: 400px !important;
+
+    }
+
+    .main-button {
+        display: flex !important;
+        margin-right: 5px;
+    }
+
 }

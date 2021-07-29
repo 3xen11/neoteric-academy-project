@@ -5,21 +5,20 @@ import React from 'react';
 import { Button } from "@material-ui/core"
 
 //IMPORTS STYLES
-import styled from 'styled-components'
+import styles from '../../Styles/ComponentesStyles/ButtonsStyles/_OutlinedButton.module.scss'
 
 
 type ComponentProps = {
     readonly children: string,
-    readonly ClassName?: string
-    OnClick?: any,
+    readonly className?: string
+    onClick?: any,
 }
 
 
-
-const OutlinedButton = React.memo<ComponentProps>(({ children, ClassName, OnClick }) => {
+const OutlinedButton = React.memo<ComponentProps>(({ children, className, onClick }) => {
 
     return (
-        <OutlinedButtonStylled variant="outlined" className={ClassName} onClick={OnClick}>{children}</OutlinedButtonStylled>
+        <Button variant="outlined" className={`${styles['outlined-button']} ${className}`} onClick={onClick} >{children}</Button>
     )
 })
 
@@ -27,11 +26,3 @@ export default OutlinedButton
 
 
 
-//STYLED COMPONENTS
-const OutlinedButtonStylled = styled(Button)`
- border-radius: 50px !important;
-    height: 40px !important;
-    width: 150px;
-    background-color: white;
-    font-size: 1.3rem;
-`;

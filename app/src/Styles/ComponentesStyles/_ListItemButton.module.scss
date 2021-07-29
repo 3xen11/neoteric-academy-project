@@ -1,11 +1,11 @@
-.accordion__list-item-text {
+.list-item{
     width: 100%;
     margin: 0 !important;
     background-color: white !important;
     border-radius: none;
+    display: flex;
+    text-align: left !important;
     border: none !important;
     box-shadow: none !important;
     height: 40px;
-    display: flex;
-    text-align: left !important;
 }

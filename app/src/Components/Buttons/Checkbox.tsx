@@ -8,14 +8,14 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 
 type ComponentProps = {
-    readonly ClassName?: string,
+    readonly className?: string,
 }
 
 
-const CheckboxForm = React.memo<ComponentProps>(({ ClassName }) => {
+const CheckboxForm = React.memo<ComponentProps>(({ className }) => {
 
     return (
-        <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} className={ClassName} style={{
+        <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} className={className} style={{
             transform: "scale(1.4)",
         }} />
     )

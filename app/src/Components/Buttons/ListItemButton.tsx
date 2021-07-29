@@ -5,39 +5,27 @@ import React, { ReactNode } from 'react';
 import { Button } from '@material-ui/core';
 
 //IMPORTS STYLES
-import styled from 'styled-components'
+import styles from '../../Styles/ComponentesStyles/_ListItemButton.module.scss'
 
 
 
 
 type ComponentProps = {
     readonly children: ReactNode,
-    readonly ClassName?: string
+    readonly className?: string
 }
 
 
-const ListItemButton = React.memo<ComponentProps>(({ children, ClassName }) => {
+const ListItemButton = React.memo<ComponentProps>(({ children, className }) => {
 
 
     return (
         <div>
-            <ListeItemButton variant="contained" className={ClassName}>{children}</ListeItemButton>
+            <Button variant="contained" className={styles['list-item']}>{children}</Button>
         </div>
     )
 })
 
 export default ListItemButton;
 
-//STYLED COMPONENTS
 
-const ListeItemButton = styled(Button)`
-    width: 100%;
-    margin: 0 !important;
-    display: flex;
-    text-align: left !important;
-    background-color: white !important;
-    border-radius: none;
-    border: none !important;
-    box-shadow: none !important;
-    height: 40px;
-`;
