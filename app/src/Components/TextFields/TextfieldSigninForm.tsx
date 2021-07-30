@@ -13,17 +13,17 @@ type ComponentProps = {
     className?: string;
 }
 
-const TextfieldSigninForm: FC<ComponentProps> = (props) => {
+const TextfieldSigninForm: FC<ComponentProps> = ({labelText, type, autoComplete, key, className}) => {
 
     return (
         <TextField
             id="outlined-password-input"
-            label={props.labelText}
-            type={props.type}
-            autoComplete={props.autoComplete}
+            label={labelText}
+            type={type}
+            autoComplete={autoComplete}
             variant="outlined"
-            key={props.key}
-            className={props.className}
+            key={key}
+            className={className}
             inputProps={{ style: { fontSize: 15 } }}
             InputLabelProps={{ style: { fontSize: 15 } }} //poprawić wielkość wcięcia po kliknięciu (za duży tekst)
         />

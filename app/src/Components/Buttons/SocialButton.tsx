@@ -19,7 +19,7 @@ const SocialButton = React.memo<ComponentProps>(({ className, children }) => {
 
     return (
         <Button
-            className={styles['social-button']}
+            className={`${styles['social-button']} ${className}`}
             size='large'
             variant="contained">
             {children}

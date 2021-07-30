@@ -29,8 +29,9 @@ const SigninButtons = ({ className }) => {
             <OutlinedButton aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick} className={className}>
                 Sign in
             </OutlinedButton>
+
             <Menu
-                id="fade-menu"
+                id={styles['fade-menu']}
                 anchorEl={anchorEl}
                 keepMounted
                 open={open}
