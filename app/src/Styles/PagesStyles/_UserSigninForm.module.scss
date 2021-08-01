@@ -1,6 +1,8 @@
 @use '../variables.module'as *;
 
 
+
+
 .form-container {
     display: flex;
     justify-content: flex-start;
@@ -8,13 +10,13 @@
     flex-direction: column;
     width: 100% !important;
     overflow: hidden !important;
-    
+
 
     &__header-text {
         text-align: center !important;
         align-items: center !important;
         font-size: 4rem;
-        margin: 10% 0 3% 0;
+        margin: 5% 0 3% 0;
     }
 
     &__social-container {
@@ -25,20 +27,20 @@
         align-items: center;
 
         &__button {
-        margin-top: 15px !important;
-        width: 90% !important;
-        max-width: 400px !important;
+            margin-top: 15px !important;
+            width: 90% !important;
+            max-width: 400px !important;
 
-        .social-logo {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-        }
-        
+            .social-logo {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+
         }
     }
 
-    
+
     p {
         font-size: 1.5rem;
         text-align: center !important;
@@ -49,7 +51,7 @@
     &__textfield-container {
         display: flex;
         align-items: center;
-        margin: 2%;
+        margin: 1%;
         display: flex;
         justify-content: center;
 
@@ -64,12 +66,12 @@
             margin: 0 20px !important;
             width: 80% !important;
             display: flex;
-            max-width: 450px !important;
+            max-width: 350px !important;
         }
     }
 
 
-    
+
     &__main-button {
         margin: 20px auto 20px auto !important;
         width: 60% !important;
@@ -91,7 +93,7 @@
         }
 
         .form-container__textfield-container__input {
-            width: 60% !important;
+            width: 50% !important;
         }
 
         .form-container__main-button {
@@ -114,10 +116,14 @@
             }
         }
 
-    
+
     }
 
 }
+
+
+
+
 
 
 
@@ -130,15 +136,26 @@
         width: 50% !important;
         margin: 0 !important;
         border-right: 1px solid gray;
-        min-height: 94.3vh;
+        height: 100vh;
     }
 
-    .social-container__button {
-        margin: 1vh 1%;
-        flex-basis: 40%;
-        max-width: 400px !important;
+
+    .form-container__social-container {
+        width: 100% !important;
+        max-width: 1000px !important;
+
+
+        .form-container__social-container__button {
+            margin: 1vh 10px;
+            max-width: 350px !important;
+
+        }
+
     }
+
+    .pageContainer {
+        max-height: 100vh !important;
+        overflow: hidden !important;
+    }
+
 }
-
-
-

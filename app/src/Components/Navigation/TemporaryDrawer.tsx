@@ -34,18 +34,19 @@ export default function TemporaryDrawer(props: any) {
             return;
         }
         setState({ ...state, [anchor]: open });
+
     };
 
 
 
-    const list = (anchor: Anchor) => (
+    const list = (anchor: Anchor, className?) => (
         <div
             className={styles['list-container']}
             role="presentation"
             onKeyDown={toggleDrawer(anchor, false)}>
 
             <h2 className={styles['header-text']}>MENU</h2>
-            <h2 onClick={toggleDrawer(anchor, false)} className={styles['quit-button']}>Close</h2>
+            <h2 onClick={toggleDrawer(anchor, false)} className={styles['quit-button']}><i className="far fa-times-circle"></i></h2>
 
 
             <List className={styles['responsive-list-part']}>
@@ -94,13 +95,13 @@ export default function TemporaryDrawer(props: any) {
 
     return (
 
-        <div className={props.ClassName}>
+        <div className={props.className}>
 
             {(['right'] as Anchor[]).map((anchor) => (
 
                 <React.Fragment key={anchor}>
 
-                    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                    <Button onClick={toggleDrawer(anchor, true)}>{<i className={`${styles['hamburger']} fas fa-bars `}></i>}</Button>
                     <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>{list(anchor)}</Drawer>
 
                 </React.Fragment>

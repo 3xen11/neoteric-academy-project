@@ -6,26 +6,27 @@ import TextField from '@material-ui/core/TextField';
 
 
 type ComponentProps = {
-    labelText: string,
+    label: string,
     type: string,
     autoComplete?: string,
     key?: string,
     className?: string;
 }
 
-const TextfieldSigninForm: FC<ComponentProps> = ({labelText, type, autoComplete, key, className}) => {
+const TextfieldSigninForm: FC<ComponentProps> = ({ label, type, autoComplete, key, className }) => {
 
     return (
         <TextField
-            id="outlined-password-input"
-            label={labelText}
+            required
+            id="standard-required"
+            label={label}
             type={type}
             autoComplete={autoComplete}
             variant="outlined"
             key={key}
             className={className}
-            inputProps={{ style: { fontSize: 15 } }}
-            InputLabelProps={{ style: { fontSize: 15 } }} //poprawić wielkość wcięcia po kliknięciu (za duży tekst)
+            inputProps={{ style: { fontSize: 12 } }}
+            InputLabelProps={{ style: { fontSize: 12 } }}
         />
     )
 }

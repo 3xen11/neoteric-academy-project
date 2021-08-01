@@ -1,11 +1,6 @@
 //IMPORTS FROM REACT
 import { Link } from 'react-router-dom'
 
-
-//IMPORTS FROM MATERIAL UI
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-
 //IMPORTS COMPONENTS
 import MainButton from "../../Components/Buttons/MainButton";
 import TextfieldSigninForm from "../../Components/TextFields/TextfieldSigninForm";
@@ -14,10 +9,10 @@ import CheckboxForm from "../../Components/Buttons/Checkbox";
 import Navbar from '../../Components/Navigation/Navbar';
 
 //IMPORTS SVG SOCIAL-LOGO
-import FacebookLogo from '../../img/facebook.svg'
-import GithubLogo from '../../img/github.svg'
-import GoogleLogo from '../../img/google.svg'
-import LinkedinLogo from '../../img/linkedin.svg'
+import FacebookLogo from '../../assets/imgSocials/facebook.svg'
+import GithubLogo from '../../assets/imgSocials/github.svg'
+import GoogleLogo from '../../assets/imgSocials/google.svg'
+import LinkedinLogo from '../../assets/imgSocials/linkedin.svg'
 
 
 //IMPORTS STYLES
@@ -29,18 +24,18 @@ const UserRegisterForm = () => {
 
 
     return (
-        <div>
+        <div className={styles['pageContainer']}>
             <Navbar />
 
             <div className={styles['form-container']}>
 
 
-            <div className={styles['form-container__header-text']}>
+                <div className={styles['form-container__header-text']}>
                     Get started for free
-            </div>
-          
-                    
-            <div className={styles['form-container__social-container']}>
+                </div>
+
+
+                <div className={styles['form-container__social-container']}>
                     <SocialButton className={styles['form-container__social-container__button']}><img src={GoogleLogo} className={styles['social-logo']} alt='logo-google' />Register with Google</SocialButton>
                     <SocialButton className={styles['form-container__social-container__button']}><img src={GithubLogo} className={styles['social-logo']} alt='logo-github' />Register with Github</SocialButton>
                     <SocialButton className={styles['form-container__social-container__button']}><img src={LinkedinLogo} className={styles['social-logo']} alt='logo-linkedin' />Register with Linkedin</SocialButton>
@@ -49,11 +44,11 @@ const UserRegisterForm = () => {
 
                 <p>OR</p>
 
-                <div className={styles['form-container__textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm labelText="Email" type='text' key='1' className={styles['form-container__textfield-container__input']} /></div>
+                <div className={styles['form-container__textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm label="Email" type='text' key='1' className={styles['form-container__textfield-container__input']} /></div>
 
-                <div className={styles['form-container__textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm labelText="Password" type='password' key='2' className={styles['form-container__textfield-container__input']} /></div>
+                <div className={styles['form-container__textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm label="Password" type='password' key='2' className={styles['form-container__textfield-container__input']} /></div>
 
-                <div className={styles['form-container__textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm labelText="Repeat password" type='password' key='2' className={styles['form-container__textfield-container__input']} /></div>
+                <div className={styles['form-container__textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm label="Repeat password" type='password' key='2' className={styles['form-container__textfield-container__input']} /></div>
 
                 <br />
 

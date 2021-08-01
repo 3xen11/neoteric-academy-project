@@ -5,10 +5,10 @@ import SocialButton from "../../Components/Buttons/SocialButton";
 import Navbar from '../../Components/Navigation/Navbar';
 
 //IMPORT SVG SOCIAL-LOGO
-import FacebookLogo from '../../img/facebook.svg'
-import GithubLogo from '../../img/github.svg'
-import GoogleLogo from '../../img/google.svg'
-import LinkedinLogo from '../../img/linkedin.svg'
+import FacebookLogo from '../../assets/imgSocials/facebook.svg'
+import GithubLogo from '../../assets/imgSocials/github.svg'
+import GoogleLogo from '../../assets/imgSocials/google.svg'
+import LinkedinLogo from '../../assets/imgSocials/linkedin.svg'
 
 //IMPORT STYLES
 import styles from '../../Styles/PagesStyles/_UserSigninForm.module.scss'
@@ -22,7 +22,7 @@ const UserSigninForm = () => {
 
 
     return (
-        <div> 
+        <div className={styles['pageContainer']}>
             <Navbar />
 
             <div className={styles['form-container']}>
@@ -43,9 +43,9 @@ const UserSigninForm = () => {
                 <p>OR</p>
 
 
-                <div className={styles['form-container__textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm labelText="Email" type='text' key='1' className={styles['form-container__textfield-container__input']} /></div>
+                <div className={styles['form-container__textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm label="Email" type='text' key='1' className={styles['form-container__textfield-container__input']} /></div>
 
-                <div className={styles['form-container__textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm labelText="Password" type='password' key='2' className={styles['form-container__textfield-container__input']} /></div>
+                <div className={styles['form-container__textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm label="Password" type='password' key='2' className={styles['form-container__textfield-container__input']} /></div>
 
                 <br />
                 <MainButton className={styles['form-container__main-button']}>Sign In</MainButton>

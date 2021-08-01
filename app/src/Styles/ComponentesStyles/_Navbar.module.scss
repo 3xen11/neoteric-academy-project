@@ -39,26 +39,41 @@
 
     .links-buttons-container {
         display: flex;
+        width: 70%;
+        justify-content: flex-end;
 
 
         .navbar-container-buttons {
             display: flex;
             justify-content: flex-end;
+            margin-left: 2%;
+            align-items: center;
+
+
+
 
             .main-button {
                 display: none;
-                margin: 3% 2% !important;
+                width: 150px !important;
             }
 
             .signin-button {
-                margin: 7.5% 2% !important;
+                margin: auto 2% !important;
                 display: flex;
+                align-self: center;
+                width: 150px !important;
+                margin: 8% 2% !important;
             }
 
             .navbar-container__drawer {
-                border-left: 1px solid gray;
-            }
+                display: flex;
+                align-self: center !important;
+                justify-content: center !important;
 
+                height: 100% !important;
+                border-left: 1px solid gray !important;
+                margin-left: 5%;
+            }
         }
 
 
@@ -99,13 +114,12 @@
         display: flex !important;
         justify-content: flex-start;
         align-items: center;
-        width: 400px !important;
 
     }
 
     .main-button {
         display: flex !important;
-        margin-right: 5px;
+        // margin-right: 5px;
     }
 
 }

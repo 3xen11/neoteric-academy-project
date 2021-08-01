@@ -27,8 +27,8 @@ const EmployerSigninForm = () => {
                     <Link to='/' className={styles['header-text']}>justjoin.it </Link>
 
 
-                    <div className={styles['textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm labelText="Email" type='text' className={styles['textfield-container__input']} /></div>
-                    <div className={styles['textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm labelText="Password" type='password' className={styles['textfield-container__input']} /></div>
+                    <div className={styles['textfield-container']}><i className="fas fa-user"></i><TextfieldSigninForm label="Email" type='text' className={styles['textfield-container__input']} /></div>
+                    <div className={styles['textfield-container']}><i className="fas fa-lock"></i><TextfieldSigninForm label="Password" type='password' className={styles['textfield-container__input']} /></div>
 
                     <br />
 

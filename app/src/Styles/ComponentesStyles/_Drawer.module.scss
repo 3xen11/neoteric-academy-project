@@ -42,7 +42,15 @@
 .quit-button {
     display: block;
     position: absolute;
-    right: 20px;
-    top: 5px;
+    right: 10px;
+    top: 2px;
     cursor: pointer;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hamburger {
+    display: flex;
+    font-size: 3rem !important;
+    align-self: center;
 }
