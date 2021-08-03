@@ -5,9 +5,10 @@ import React, { ReactNode } from 'react';
 import { Button } from '@material-ui/core';
 
 //IMPORTS STYLES
-import styles from '../../Styles/ComponentesStyles/_ListItemButton.module.scss'
+import styles from './buttons.module.scss'
 
-
+//IMPORT CLASSNAMES
+import classNames from 'classnames'
 
 
 type ComponentProps = {
@@ -18,10 +19,11 @@ type ComponentProps = {
 
 const ListItemButton = React.memo<ComponentProps>(({ children, className }) => {
 
+    const classValue = classNames(className, styles.listItem);
 
     return (
         <div>
-            <Button variant="contained" className={styles['list-item']}>{children}</Button>
+            <Button variant="contained" className={classValue}>{children}</Button>
         </div>
     )
 })

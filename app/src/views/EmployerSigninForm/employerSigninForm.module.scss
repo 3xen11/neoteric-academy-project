@@ -1,0 +1,86 @@
+%flex--align-center {
+    display: flex;
+    align-items: center;
+}
+
+
+.container {
+    @extend %flex--align-center;
+    font-size: 1.2rem;
+    justify-content: center;
+    background-color: white !important;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+    &Card {
+        display: none;
+    }
+
+    .headerText {
+        margin: 70px !important;
+        font-size: 4.5rem;
+        color: gray;
+    }
+
+    .textfieldContainer {
+        @extend %flex--align-center;
+        margin-bottom: 20px;
+
+        i {
+            display: flex;
+            color: grey;
+            font-size: 20px;
+            margin-right: 15px;
+            justify-content: center;
+        }
+
+        .textfieldInput {
+            font-size: 1.5rem !important;
+            width: 300px;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+
+        .switch {
+            transform: scale(1.2);
+        }
+    }
+
+    a {
+        display: block;
+        margin-top: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        color: pink;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .container {
+        background-color: grey !important;
+
+        &Card {
+            width: 500px !important;
+            height: 650px !important;
+            border-radius: 50px;
+            background-color: white;
+            flex-direction: column;
+            //----nie mogę podmienić na @extend %flex--align-center;----
+            display: flex;
+            align-items: center;
+            //-----------------------------------------------------------
+            justify-content: center;
+            box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.60);
+        }
+    }
+}

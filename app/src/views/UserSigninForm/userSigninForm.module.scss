@@ -1,0 +1,132 @@
+.formContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    width: 100% !important;
+    overflow: hidden !important;
+
+    .headerText {
+        text-align: center !important;
+        align-items: center !important;
+        font-size: 4rem;
+        margin: 5% 0 3% 0;
+    }
+
+    .socialContainer {
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .socialButton {
+            margin-top: 15px !important;
+            width: 90% !important;
+            max-width: 400px !important;
+
+            .socialLogo {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .textfieldContainer {
+        display: flex;
+        align-items: center;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+
+
+        i {
+            display: flex;
+            color: rgba(128, 128, 128, 0.426);
+            font-size: 2rem;
+        }
+
+        .textfieldInput {
+            margin: 0 20px !important;
+            width: 80% !important;
+            display: flex;
+            max-width: 350px !important;
+        }
+    }
+
+    .mainButton {
+        margin: 20px auto 20px auto !important;
+        width: 60% !important;
+        max-width: 250px !important;
+    }
+
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 71, 101);
+    }
+
+    @media (min-width: 768px) {
+        .socialButton {
+            width: 60% !important;
+        }
+
+        .textfieldInput {
+            width: 50% !important;
+        }
+
+        .mainButton {
+            width: 40% !important;
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        .socialContainer {
+            margin: 0 auto !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 600px;
+
+            .socialButton {
+                margin: 1vh 1%;
+                flex-basis: 40%;
+                max-width: 300px !important;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .formContainer {
+        width: 50% !important;
+        margin: 0 !important;
+        border-right: 1px solid gray;
+        height: 100vh;
+    }
+
+    .socialContainer {
+        width: 100% !important;
+        max-width: 1000px !important;
+
+        .socialButton {
+            margin: 1vh 10px;
+            max-width: 350px !important;
+        }
+    }
+
+    .pageContainer {
+        max-height: 100vh !important;
+        overflow: hidden !important;
+    }
+}

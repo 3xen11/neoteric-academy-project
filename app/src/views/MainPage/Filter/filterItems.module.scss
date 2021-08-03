@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 1%;
+
+    .expandableButton {
+        display: none !important;
+        margin-left: 0.5% !important;
+    }
+
+    .expandableButtonHiding {
+        display: flex;
+    }
+
+    @media (min-width: 1024px) {
+        .expandableButtonHiding {
+            display: none;
+        }
+
+        .expandableButton {
+            display: flex !important;
+        }
+    }
+}
+
+
+.button {
+    margin-right: 5px !important;
+}

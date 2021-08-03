@@ -1,4 +1,4 @@
-//IMPORT TYPE
+//IMPORT FROM REACT
 import React, { ReactNode } from "react"
 
 

@@ -1,8 +1,8 @@
 //IMPORTS COMPONENTS
-import UserSigninForm from './Pages/SigninRegisterPages/UserSigninForm';
-import UserRegisterForm from './Pages/SigninRegisterPages/UserRegisterForm';
-import EmployerSigninForm from './Pages/SigninRegisterPages/EmployerSignin';
-import MainPage from './Pages/MainPage';
+import UserSigninForm from './views/UserSigninForm/UserSigninForm';
+import UserRegisterForm from './views/UserRegisterForm/UserRegisterForm';
+import EmployerSigninForm from './views/EmployerSigninForm/EmployerSigninForm';
+import MainPage from './views/MainPage/MainPage';
 
 import { Route, Switch } from "react-router-dom";
 

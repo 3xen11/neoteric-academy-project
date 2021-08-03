@@ -5,20 +5,27 @@ import React from 'react';
 import { Button } from "@material-ui/core"
 
 //IMPORTS STYLES
-import styles from '../../Styles/ComponentesStyles/ButtonsStyles/_OutlinedButton.module.scss'
+import styles from './buttons.module.scss'
+
+//IMPORT CLASSNAMES
+import classNames from 'classnames'
+
 
 
 type ComponentProps = {
     readonly children: string,
-    readonly className?: string
-    onClick?: any,
+    readonly className?: string,
+    readonly onClick?: any,
 }
 
 
 const OutlinedButton = React.memo<ComponentProps>(({ children, className, onClick }) => {
 
+    const classValue = classNames(className, styles.outlinedButton)
+
+
     return (
-        <Button variant="outlined" className={`${styles['outlined-button']} ${className}`} onClick={onClick} >{children}</Button>
+        <Button variant="outlined" className={classValue} onClick={onClick} >{children}</Button>
     )
 })
 

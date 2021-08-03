@@ -1,0 +1,60 @@
+.listContainer {
+    width: 100vw !important;
+
+    .headerText {
+        margin-left: 15px;
+    }
+
+    .quitButton {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        cursor: pointer;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .hidingListPart {
+        display: none;
+    }
+
+    .responsiveListPart {
+
+        .accordion {
+            display: flex;
+            justify-content: flex-start !important;
+            flex-direction: column;
+        }
+    }
+
+    .userLogo {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+}
+
+.hamburger {
+    display: flex;
+    font-size: 3rem !important;
+    align-self: center;
+}
+
+@media (min-width: 600px) {
+
+    .listContainer {
+        width: 300px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .responsiveListPart {
+        display: none;
+    }
+
+    .hidingListPart {
+        display: block;
+    }
+}

@@ -5,22 +5,30 @@ import React, { ReactNode } from 'react';
 import Button from '@material-ui/core/Button';
 
 //IMPORTS STYLES
-import styles from '../../Styles/ComponentesStyles/ButtonsStyles/_SocialButton.module.scss'
+import styles from './buttons.module.scss'
+
+//IMPORT CLASSNAMES
+import classNames from 'classnames'
 
 
 type ComponentProps = {
     readonly className?: string,
-    readonly children?: ReactNode,
+    readonly children?: ReactNode | string,
+    readonly onClick?: any,
+    readonly variant?: 'contained' | 'outlined',
+    readonly disableElevation?: boolean,
 }
 
 
 
 const SocialButton = React.memo<ComponentProps>(({ className, children }) => {
 
+    const classValue = classNames(className, styles.socialButton);
+
     return (
         <Button
-            className={`${styles['social-button']} ${className}`}
-            size='large'
+            disableElevation
+            className={classValue}
             variant="contained">
             {children}
         </Button>

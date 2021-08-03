@@ -1,5 +1,5 @@
 //IMPORT TYPE
-import React, { FC, ReactElement } from 'react';
+import React, { FC } from 'react';
 
 //IMPROTS FROM MATERIAL UI
 import TextField from '@material-ui/core/TextField';
