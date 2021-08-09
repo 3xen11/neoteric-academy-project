@@ -21,7 +21,7 @@ const NavbarLink = React.memo<ComponentProps>(({ className, children }) => {
 
 
     return (
-        <div className={classValue}> <a className={styles.navbarLink} href='/'>{children}</a></div >
+        <div className={classValue}> <a className={styles.navbarLink} href='/'>{children}</a></div>
     )
 })
 

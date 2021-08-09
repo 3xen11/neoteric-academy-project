@@ -6,10 +6,10 @@
     }
 
     .quitButton {
-        display: block;
+        display: flex;
         position: absolute;
-        right: 10px;
-        top: 2px;
+        right: 8px;
+        top: 5px;
         cursor: pointer;
         font-size: 3rem;
         margin: 0;
@@ -55,6 +55,6 @@
     }
 
     .hidingListPart {
-        display: block;
+        display: block !important;
     }
 }

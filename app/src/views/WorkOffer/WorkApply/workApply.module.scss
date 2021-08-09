@@ -1,0 +1,90 @@
+.componentContainer {
+    height: auto;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 70px;
+
+    h2 {
+        border-bottom: 1px solid rgb(202, 202, 202);
+        padding: 10px;
+    }
+
+    .workForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .inputContacts {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .nameInput {
+                width: 100%;
+                align-self: center !important;
+                display: flex;
+                flex-direction: column;
+
+                .textfieldInput {
+                    align-self: center !important;
+                }
+            }
+
+            .mailInput {
+                width: 100%;
+                align-self: center !important;
+                display: flex;
+                flex-direction: column;
+
+                .textfieldInput {
+                    align-self: center !important;
+                }
+            }
+
+
+            .introduceInput {
+                width: 100%;
+                align-self: center !important;
+                display: flex;
+                flex-direction: column;
+
+                .textfieldInput {
+                    align-self: center !important;
+                }
+            }
+
+        }
+
+        .inputContainer {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin: 25px 0 10px 35px;
+                font-size: 1.2rem;
+            }
+
+            .textfieldInput {
+                width: 90%;
+                align-self: center;
+            }
+        }
+
+        .applyButton {
+            width: 320px !important;
+            margin: 20px auto;
+        }
+    }
+
+
+
+
+
+    @media (min-width: 1024px) {
+        .inputContacts {
+            align-self: center;
+            flex-direction: row !important;
+            width: 95% !important;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.techStack{
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ 
+    
+    div{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    h2{
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-weight: 600;
+    }
+
+    p{
+        padding: 0 !important;
+        margin: 0 0 40px 0 !important;
+        font-size: 1.4rem;
+    }
+
+
+  
+}

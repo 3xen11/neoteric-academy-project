@@ -51,14 +51,14 @@ const SigninButtons = ({ className }) => {
                     <Link to='/user-signin'>
                         <SigninListButton className={styles.signinPopup}>
                             <img src={Employee} className={styles.userLogo} alt='logo-employee' />
-                            <span>Sign in as a developer</span>
+                            <p className={styles.buttonText}>Sign in as a developer</p>
                         </SigninListButton>
                     </Link>
 
                     <Link to='/employer-signin'>
                         <SigninListButton className={styles.signinPopup}>
                             <img src={Employer} className={styles.userLogo} alt='logo-employer' />
-                            <span>Sign in to Employer Panel</span>
+                            <p>Sign in to Employer Panel</p>
                         </SigninListButton>
                     </Link>
 

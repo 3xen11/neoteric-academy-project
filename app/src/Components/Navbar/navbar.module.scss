@@ -61,19 +61,18 @@
             }
         }
 
+
         .links {
             display: none;
+            justify-content: flex-end;
+            align-items: center;
 
-            .links {
-                display: none !important;
-                justify-content: flex-end;
-
-                .linkOffers {
-                    text-align: center;
-                    color: #ff5387 !important;
-                }
+            .linkOffers {
+                text-align: center;
+                color: #ff5387 !important;
             }
         }
+
     }
 }
 
@@ -81,11 +80,8 @@
 
 @media (min-width: 1024px) {
 
-    .navbarLinks {
+    .links {
         display: flex !important;
-        justify-content: flex-start;
-        align-items: center;
-
     }
 
     .mainButton {
@@ -93,7 +89,8 @@
     }
 
     .motto {
-        display: flex;
+        display: flex !important;
     }
+
 
 }

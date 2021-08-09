@@ -1,0 +1,52 @@
+.componentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    height: 25%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(255, 82, 82);
+
+    p {
+        padding: 5px 20px;
+        color: white;
+
+        h3 {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .aboutCompany {
+        display: flex;
+        width: 100%;
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin: 0 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .companyInfo {
+            color: white;
+
+            p {
+                padding: 0;
+            }
+
+            div {
+                text-align: center;
+                height: 15px;
+                width: 70px !important;
+                border-radius: 2px;
+                background-color: white;
+                color: rgb(255, 82, 82);
+            }
+        }
+
+    }
+
+}

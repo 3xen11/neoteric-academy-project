@@ -6,18 +6,22 @@ import TextField from '@material-ui/core/TextField';
 
 
 type ComponentProps = {
-    label: string,
+    label?: string,
     type: string,
     autoComplete?: string,
     key?: string,
+    rows?: number
     className?: string;
+    multiline?: boolean;
+    placeholder?: string;
 }
 
-const TextfieldSigninForm: FC<ComponentProps> = ({ label, type, autoComplete, key, className }) => {
+const TextfieldSigninForm: FC<ComponentProps> = ({ label, type, autoComplete, key, className, rows, multiline, placeholder }) => {
 
     return (
         <TextField
             required
+            rows={rows}
             id="standard-required"
             label={label}
             type={type}
@@ -27,6 +31,8 @@ const TextfieldSigninForm: FC<ComponentProps> = ({ label, type, autoComplete, ke
             className={className}
             inputProps={{ style: { fontSize: 12 } }}
             InputLabelProps={{ style: { fontSize: 12 } }}
+            multiline={multiline}
+            placeholder={placeholder}
         />
     )
 }

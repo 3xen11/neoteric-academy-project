@@ -1,0 +1,37 @@
+.infoPanels {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(202, 202, 202);
+
+    .panelLogo {
+        display: flex;
+        align-self: center;
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .infoPanels {
+        justify-content: space-evenly;
+
+        .offerPanel {
+            display: flex;
+            width: 24.5%;
+            height: 80px;
+
+            .panelLogo {
+                display: flex;
+                align-self: center;
+                height: 50%;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
