@@ -1,7 +1,9 @@
 import InfoPanel from "./InfoPanel/InfoPanel"
 import styles from './infoPanels.module.scss'
 import OfficeLogo from '../../../assets/imgPanels/office.svg'
-
+import EmployeeLogo from '../../../assets/imgPanels/employee.svg'
+import ExpirienceLogo from '../../../assets/imgPanels/expirience.svg'
+import TimeLogo from '../../../assets/imgPanels/time.svg'
 
 const InfoPanels = () => {
 
@@ -27,39 +29,39 @@ const InfoPanels = () => {
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>Smart4Aviation</div>
-                        <div>company name</div>
+                        <div>20-50</div>
+                        <div>company size</div>
                     </div>
                 } >  <img
-                    src={OfficeLogo}
+                    src={EmployeeLogo}
                     className={styles.panelLogo}
-                    alt='logo-office' /></InfoPanel>
+                    alt='logo-employee' /></InfoPanel>
 
 
             <InfoPanel
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>Smart4Aviation</div>
-                        <div>company name</div>
+                        <div>Senior</div>
+                        <div>EXP. lvl</div>
                     </div>
                 } > <img
-                    src={OfficeLogo}
+                    src={ ExpirienceLogo}
                     className={styles.panelLogo}
-                    alt='logo-office' /> </InfoPanel>
+                    alt='logo-expirience' /> </InfoPanel>
 
 
             <InfoPanel
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>Smart4Aviation</div>
-                        <div>company name</div>
+                        <div>New</div>
+                        <div>Added</div>
                     </div>
                 } > <img
-                    src={OfficeLogo}
+                    src={TimeLogo}
                     className={styles.panelLogo}
-                    alt='logo-office' /> </InfoPanel>
+                    alt='logo-time' /> </InfoPanel>
 
         </div>
     )

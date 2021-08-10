@@ -40,19 +40,6 @@
                     align-self: center !important;
                 }
             }
-
-
-            .introduceInput {
-                width: 100%;
-                align-self: center !important;
-                display: flex;
-                flex-direction: column;
-
-                .textfieldInput {
-                    align-self: center !important;
-                }
-            }
-
         }
 
         .inputContainer {
@@ -60,13 +47,27 @@
             flex-direction: column;
 
             p {
-                margin: 25px 0 10px 35px;
-                font-size: 1.2rem;
+                width: 90%;
+                align-self: center;
+                margin:20px 0 10px 0;
             }
 
             .textfieldInput {
                 width: 90%;
                 align-self: center;
+            }
+
+            .introduceInput {
+                width: 100%;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    width: 90%;
+                    align-self: center;
+                    margin:20px 0 10px 0;
+                }
             }
         }
 
@@ -75,8 +76,6 @@
             margin: 20px auto;
         }
     }
-
-
 
 
 

@@ -16,7 +16,7 @@ const OfferTemplate = () => {
 
                 <div className={styles.leftInfo}>
 
-                    <span className={styles.jobPosition}>UI/UX Designer</span>
+                    <span className={styles.jobPosition}>Fullstack (.NetCore+Angular) 100% REMOTE</span>
 
                     <div className={styles.companyInfos}>
                         <span className={styles.companyInfo}> SwingDev</span>
