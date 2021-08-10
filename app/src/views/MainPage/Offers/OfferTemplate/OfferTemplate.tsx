@@ -6,7 +6,7 @@ import styles from './offerTemplate.module.scss'
 
 
 
-const OfferTemplate = () => {
+const OfferTemplate = ({ title, salary, city, remote, offerStatus, techStack }) => {
     return (
         <div className={styles.container}>
             <div className={styles.logo}>
@@ -16,31 +16,31 @@ const OfferTemplate = () => {
 
                 <div className={styles.leftInfo}>
 
-                    <span className={styles.jobPosition}>Fullstack (.NetCore+Angular) 100% REMOTE</span>
+                    <span className={styles.jobPosition}>{title}</span>
 
                     <div className={styles.companyInfos}>
                         <span className={styles.companyInfo}> SwingDev</span>
-                        <span className={styles.companyInfo}> Warszawa</span>
-                        <span className={styles.companyInfo}> fully remote</span>
-                        <span className={styles.earningsMobile} >81500 - 93000 pln</span>
+                        <span className={styles.companyInfo}> {city}</span>
+                        <span className={styles.companyInfo}> {remote}</span>
+                        <span className={styles.earningsMobile} >{salary}</span>
                     </div>
                 </div>
 
                 <div className={styles.rightInfo}>
 
                     <div className={styles.offerInfo}>
-                        <span className={styles.earnings} >81500 - 93000 pln</span>
-                        <div className={styles.offerStatus}>new</div>
+                        <span className={styles.earnings} >{salary}</span>
+                        <div className={styles.offerStatus}>{offerStatus}</div>
                     </div>
 
                     <div className={styles.requirements}>
-                        <div className={styles.requirement}>ux</div>
-                        <div className={styles.requirement}>ui</div>
-                        <div className={styles.requirement}>english</div>
+                        <div className={styles.requirement}>{techStack[0]}</div>
+                        <div className={styles.requirement}>{techStack[1]}</div>
+                        <div className={styles.requirement}>{techStack[3]}</div>
 
                         <div className={styles.companyInfosMobile}>
-                            <span className={styles.companyInfo}> Warszawa,</span>
-                            <span className={styles.companyInfo}> fully remote</span>
+                            <span className={styles.companyInfo}>{`${city}, `}</span>
+                            <span className={styles.companyInfo}> {remote}</span>
                         </div>
                     </div>
 

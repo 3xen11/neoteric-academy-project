@@ -1,0 +1,54 @@
+[{
+        "id": 1,
+        "company": "Fingoweb",
+        "address": {
+            "city": "Kraków",
+            "street": "Ostatnia 1C/A10"
+        },
+        "employees": "35+",
+        "logo": "link_do_zdjęcia",
+        "coordinates": "nie_mam_pojęica_co_tu_dać",
+        "offers": [{
+            "id": 1,
+            "title": "Junior JavaScript Developer",
+            "salary": "5000 - 9000 pln",
+            "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+            "remote": "Partly Remote",
+            "offerStatus": "new",
+            "description": "opis_stanowiska",
+            "photo": "link_do_zdjęcia"
+        }]
+    },
+    {
+        "id": 2,
+        "company": "BlueSoft",
+        "address": {
+            "city": "Warszawa",
+            "street": "Al. Jerozolimskie 96"
+        },
+        "employees": "650+",
+        "logo": "link_do_zdjęcia",
+        "coordinates": "nie_mam_pojęica_co_tu_dać",
+        "offers": [{
+                "id": 2,
+                "title": "AWS Architect",
+                "salary": "17000 - 25000 pln",
+                "techStack": ["AWS"],
+                "remote": "Fully Remote",
+                "offerStatus": "new",
+                "description": "opis_stanowiska",
+                "photo": "link_do_zdjęcia"
+            },
+            {
+                "id": 3,
+                "title": "Scrum Master",
+                "salary": "15000 - 20000 pln",
+                "techStack": ["Scrum", "Scrum Master", "English"],
+                "remote": "Fully Remote",
+                "offerStatus": "new",
+                "description": "opis_stanowiska",
+                "photo": "link_do_zdjęcia"
+            }
+        ]
+    }
+]
