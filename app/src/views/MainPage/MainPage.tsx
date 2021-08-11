@@ -10,18 +10,29 @@ import styles from './mainPage.module.scss'
 
 
 
+
 const MainPage = ({ offers }) => {
+
+
+
+
 
     const templateOffers = offers.map(offer => (
         <OfferTemplate 
-        title={offer.title}
-        salary={offer.salary}
-        city={offer.city}
-        remote={offer.remote}
-        offerStatus={offer.offerStatus}
-        techStack={offer.techStack}
+        key={offer.key}
+        company={offer.company}
+        title={offer.offers[0].title}
+        salary={offer.offers[0].salary}
+        city={offer.address.city}
+        remote={offer.offers[0].remote}
+        offerStatus={offer.offers[0].offerStatus}
+        logo={offer.logo}
+        techStacks={offer.offers[0].techStack}
         />
-    ))
+    ));
+ 
+   
+    
 
     return (
 

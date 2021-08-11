@@ -1,0 +1,25 @@
+.requirements{
+display: flex;
+
+    .requirement {
+        display: none;
+        background-color: white;
+        padding: 0 5px;
+        border-radius: 10px;
+        margin-left: 5px;
+        border: 1px solid gray;
+    }
+    
+    
+    @media (min-width: 1024px) {
+        .requirement {
+            display: flex !important;
+        }
+    }
+}
+
+
+.hiding{
+    display: none;
+}
+

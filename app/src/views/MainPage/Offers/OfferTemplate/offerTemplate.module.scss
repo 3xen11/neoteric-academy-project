@@ -11,8 +11,7 @@ overflow: hidden;
     .logo {
         display: flex;
         height: 70px;
-        min-width: 100px !important;
-        background-color: green;
+        width: 70px !important;
         margin: auto 5px auto 5px;
     }
 
@@ -97,14 +96,7 @@ overflow: hidden;
                 font-size: 1.2rem;
                 
 
-                .requirement {
-                    display: none;
-                    background-color: white;
-                    padding: 0 5px;
-                    border-radius: 10px;
-                    margin-left: 5px;
-                    border: 1px solid gray;
-                }
+               
 
                 .companyInfosMobile {
                     display: flex;

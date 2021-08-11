@@ -1,16 +1,17 @@
-//IMPORT STYLES
+
 import styles from './offerTemplate.module.scss'
+import TechOfferTemplate from './TechOfferTemplate/TechOfferTemplate'
 
 
 
 
 
+const OfferTemplate = ({ logo, title, salary, city, remote, offerStatus, company, techStacks }) => {
 
-const OfferTemplate = ({ title, salary, city, remote, offerStatus, techStack }) => {
     return (
         <div className={styles.container}>
             <div className={styles.logo}>
-
+            <img src={logo}/>
             </div>
             <div className={styles.containerInfo}>
 
@@ -19,7 +20,7 @@ const OfferTemplate = ({ title, salary, city, remote, offerStatus, techStack }) 
                     <span className={styles.jobPosition}>{title}</span>
 
                     <div className={styles.companyInfos}>
-                        <span className={styles.companyInfo}> SwingDev</span>
+                        <span className={styles.companyInfo}> {company}</span>
                         <span className={styles.companyInfo}> {city}</span>
                         <span className={styles.companyInfo}> {remote}</span>
                         <span className={styles.earningsMobile} >{salary}</span>
@@ -34,9 +35,9 @@ const OfferTemplate = ({ title, salary, city, remote, offerStatus, techStack }) 
                     </div>
 
                     <div className={styles.requirements}>
-                        <div className={styles.requirement}>{techStack[0]}</div>
-                        <div className={styles.requirement}>{techStack[1]}</div>
-                        <div className={styles.requirement}>{techStack[3]}</div>
+
+                        <TechOfferTemplate
+                        techStack={techStacks}/>
 
                         <div className={styles.companyInfosMobile}>
                             <span className={styles.companyInfo}>{`${city}, `}</span>

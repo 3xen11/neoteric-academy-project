@@ -16,64 +16,163 @@ const App: React.FC = (): JSX.Element => {
 
   let state = {
     offers: [{
-      "id": 1,
-      "title": "Junior JavaScript Developer",
-      "salary": "5000 - 9000 pln",
-      "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
-      "remote": "Partly Remote",
-      "offerStatus": "new",
-      "description": "opis_stanowiska",
-      "photo": "link_do_zdjęcia"
+        "key": 1,
+        "company": "Fingoweb",
+        "address": {
+            "city": "Kraków",
+            "street": "Ostatnia 1C/A10"
+        },
+        "employees": "35+",
+        "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+        "coordinates": "nie_mam_pojęica_co_tu_dać",
+        "offers": [{
+            "key": 1,
+            "title": "Junior JavaScript Developer",
+            "salary": "5000 - 9000 pln",
+            "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+            "remote": "Partly Remote",
+            "offerStatus": "new",
+            "description": "opis_stanowiska",
+            "photo": "link_do_zdjęcia"
+        }]
     },
     {
-      "id": 2,
-      "title": "AWS Architect",
-      "salary": "17000 - 25000 pln",
-      "techStack": ["AWS"],
-      "remote": "Fully Remote",
-      "offerStatus": "new",
-      "description": "opis_stanowiska",
-      "photo": "link_do_zdjęcia"
+        "key": 2,
+        "company": "BlueSoft",
+        "address": {
+            "city": "Warszawa",
+            "street": "Al. Jerozolimskie 96"
+        },
+        "employees": "650+",
+        "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+        "coordinates": "nie_mam_pojęica_co_tu_dać",
+        "offers": [{
+                "key": 1,
+                "title": "AWS Architect",
+                "salary": "17000 - 25000 pln",
+                "techStack": ["AWS", "English"],
+                "remote": "Fully Remote",
+                "offerStatus": "new",
+                "description": "opis_stanowiska",
+                "photo": "link_do_zdjęcia"
+            },
+            {
+                "key": 2,
+                "title": "Scrum Master",
+                "salary": "15000 - 20000 pln",
+                "techStack": ["Scrum", "Scrum Master", "English"],
+                "remote": "Fully Remote",
+                "offerStatus": "new",
+                "description": "opis_stanowiska",
+                "photo": "link_do_zdjęcia"
+            }
+        ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+          "city": "Kraków",
+          "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+          "key": 1,
+          "title": "Junior JavaScript Developer",
+          "salary": "5000 - 9000 pln",
+          "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+          "remote": "Partly Remote",
+          "offerStatus": "new",
+          "description": "opis_stanowiska",
+          "photo": "link_do_zdjęcia"
+      }]
+  },
+  {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+          "city": "Warszawa",
+          "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+              "key": 1,
+              "title": "AWS Architect",
+              "salary": "17000 - 25000 pln",
+              "techStack": ["AWS", "English"],
+              "remote": "Fully Remote",
+              "offerStatus": "new",
+              "description": "opis_stanowiska",
+              "photo": "link_do_zdjęcia"
+          },
+          {
+              "key": 2,
+              "title": "Scrum Master",
+              "salary": "15000 - 20000 pln",
+              "techStack": ["Scrum", "Scrum Master", "English"],
+              "remote": "Fully Remote",
+              "offerStatus": "new",
+              "description": "opis_stanowiska",
+              "photo": "link_do_zdjęcia"
+          }
+      ]
+  },{
+    "key": 1,
+    "company": "Fingoweb",
+    "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
     },
-    {
-      "id": 3,
-      "title": "Scrum Master",
-      "salary": "15000 - 20000 pln",
-      "techStack": ["Scrum", "Scrum Master", "English"],
-      "remote": "Fully Remote",
-      "offerStatus": "new",
-      "description": "opis_stanowiska",
-      "photo": "link_do_zdjęcia"
-    }, {
-      "id": 4,
-      "title": "Junior JavaScript Developer",
-      "salary": "5000 - 9000 pln",
-      "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
-      "remote": "Partly Remote",
-      "offerStatus": "new",
-      "description": "opis_stanowiska",
-      "photo": "link_do_zdjęcia"
-    },
-    {
-      "id": 5,
-      "title": "AWS Architect",
-      "salary": "17000 - 25000 pln",
-      "techStack": ["AWS"],
-      "remote": "Fully Remote",
-      "offerStatus": "new",
-      "description": "opis_stanowiska",
-      "photo": "link_do_zdjęcia"
-    },
-    {
-      "id": 6,
-      "title": "Scrum Master",
-      "salary": "15000 - 20000 pln",
-      "techStack": ["Scrum", "Scrum Master", "English"],
-      "remote": "Fully Remote",
-      "offerStatus": "new",
-      "description": "opis_stanowiska",
-      "photo": "link_do_zdjęcia"
+    "employees": "35+",
+    "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+    "coordinates": "nie_mam_pojęica_co_tu_dać",
+    "offers": [{
+        "key": 1,
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
     }]
+},
+{
+    "key": 2,
+    "company": "BlueSoft",
+    "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+    },
+    "employees": "650+",
+    "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+    "coordinates": "nie_mam_pojęica_co_tu_dać",
+    "offers": [{
+            "key": 1,
+            "title": "AWS Architect",
+            "salary": "17000 - 25000 pln",
+            "techStack": ["AWS", "English"],
+            "remote": "Fully Remote",
+            "offerStatus": "new",
+            "description": "opis_stanowiska",
+            "photo": "link_do_zdjęcia"
+        },
+        {
+            "key": 2,
+            "title": "Scrum Master",
+            "salary": "15000 - 20000 pln",
+            "techStack": ["Scrum", "Scrum Master", "English"],
+            "remote": "Fully Remote",
+            "offerStatus": "new",
+            "description": "opis_stanowiska",
+            "photo": "link_do_zdjęcia"
+        }
+    ]
+}
+]
   }
 
 
