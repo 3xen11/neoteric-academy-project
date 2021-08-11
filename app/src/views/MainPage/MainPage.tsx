@@ -11,28 +11,28 @@ import styles from './mainPage.module.scss'
 
 
 
-const MainPage = ({ offers }) => {
+
+const MainPage = ({ templateOffer }) => {
+    const templateOffers = templateOffer.map(offer => (
 
 
-
-
-
-    const templateOffers = offers.map(offer => (
-        <OfferTemplate 
-        key={offer.key}
-        company={offer.company}
-        title={offer.offers[0].title}
-        salary={offer.offers[0].salary}
-        city={offer.address.city}
-        remote={offer.offers[0].remote}
-        offerStatus={offer.offers[0].offerStatus}
-        logo={offer.logo}
-        techStacks={offer.offers[0].techStack}
+        <OfferTemplate
+            key={offer.key}
+            company={offer.company}
+            title={offer.offers[0].title}
+            salary={offer.offers[0].salary}
+            city={offer.address.city}
+            remote={offer.offers[0].remote}
+            offerStatus={offer.offers[0].offerStatus}
+            logo={offer.logo}
+            techStacks={offer.offers[0].techStack}
+            link={offer.offers[0].link}
         />
+
     ));
- 
-   
-    
+
+
+
 
     return (
 
@@ -48,7 +48,7 @@ const MainPage = ({ offers }) => {
                         <OffersFilterButton className={styles.filterButton}>Offers with salary</OffersFilterButton>
                         <OffersFilterButton className={styles.filterButton}>All Offers</OffersFilterButton>
                     </div>
-                  {templateOffers}
+                    {templateOffers}
                 </div>
                 <div className={styles.mapHalf}></div>
             </div>

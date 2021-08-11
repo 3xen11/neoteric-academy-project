@@ -10,30 +10,45 @@ import Description from "./Description/Description";
 
 
 
+const WorkOffer = ({ offers }) => {
 
-const WorkOffer: FC = () => {
+
+
+    const Offers = offers.map(offer => (
+
+        <div className={styles.container}>
+
+            <WorkOfferHeader
+                title={offer.offers[0].title}
+                logo={offer.logo} />
+
+            <InfoPanels
+                company={offer.company} />
+            <div className={styles.map}>
+                MAPA
+            </div>
+            <div className={styles.break}></div>
+            <TechStackPanels />
+            <div className={styles.break}></div>
+            <Description />
+            <div className={styles.break}></div>
+            <WorkApply />
+        </div>
+
+    ));
+
 
 
     return (
         <div className={styles.pageContainer}>
             <Navbar />
-            <div className={styles.container}>
-
-                <WorkOfferHeader />
-                <InfoPanels />
-                <div className={styles.map}>
-                    MAPA
-                </div>
-                <div className={styles.break}></div>
-                <TechStackPanels/>
-                <div className={styles.break}></div>
-                <Description/>
-                <div className={styles.break}></div>
-                <WorkApply />
-            </div>
+            {Offers}
             <div className={styles.mapHalf}></div>
         </div >
     )
 }
 
 export default WorkOffer;
+
+
+// title={offer.offers[0].title} />

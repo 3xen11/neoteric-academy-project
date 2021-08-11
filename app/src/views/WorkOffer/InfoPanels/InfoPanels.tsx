@@ -5,7 +5,7 @@ import EmployeeLogo from '../../../assets/imgPanels/employee.svg'
 import ExpirienceLogo from '../../../assets/imgPanels/expirience.svg'
 import TimeLogo from '../../../assets/imgPanels/time.svg'
 
-const InfoPanels = () => {
+const InfoPanels = ({ company }) => {
 
     return (
         <div className={styles.infoPanels}>
@@ -14,7 +14,7 @@ const InfoPanels = () => {
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>Smart4Aviation</div>
+                        <div>{company}</div>
                         <div>company name</div>
                     </div>
                 }>
@@ -46,7 +46,7 @@ const InfoPanels = () => {
                         <div>EXP. lvl</div>
                     </div>
                 } > <img
-                    src={ ExpirienceLogo}
+                    src={ExpirienceLogo}
                     className={styles.panelLogo}
                     alt='logo-expirience' /> </InfoPanel>
 

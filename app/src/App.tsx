@@ -16,121 +16,18 @@ const App: React.FC = (): JSX.Element => {
 
   let state = {
     offers: [{
-        "key": 1,
-        "company": "Fingoweb",
-        "address": {
-            "city": "Kraków",
-            "street": "Ostatnia 1C/A10"
-        },
-        "employees": "35+",
-        "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
-        "coordinates": "nie_mam_pojęica_co_tu_dać",
-        "offers": [{
-            "key": 1,
-            "title": "Junior JavaScript Developer",
-            "salary": "5000 - 9000 pln",
-            "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
-            "remote": "Partly Remote",
-            "offerStatus": "new",
-            "description": "opis_stanowiska",
-            "photo": "link_do_zdjęcia"
-        }]
-    },
-    {
-        "key": 2,
-        "company": "BlueSoft",
-        "address": {
-            "city": "Warszawa",
-            "street": "Al. Jerozolimskie 96"
-        },
-        "employees": "650+",
-        "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
-        "coordinates": "nie_mam_pojęica_co_tu_dać",
-        "offers": [{
-                "key": 1,
-                "title": "AWS Architect",
-                "salary": "17000 - 25000 pln",
-                "techStack": ["AWS", "English"],
-                "remote": "Fully Remote",
-                "offerStatus": "new",
-                "description": "opis_stanowiska",
-                "photo": "link_do_zdjęcia"
-            },
-            {
-                "key": 2,
-                "title": "Scrum Master",
-                "salary": "15000 - 20000 pln",
-                "techStack": ["Scrum", "Scrum Master", "English"],
-                "remote": "Fully Remote",
-                "offerStatus": "new",
-                "description": "opis_stanowiska",
-                "photo": "link_do_zdjęcia"
-            }
-        ]
-    },{
       "key": 1,
       "company": "Fingoweb",
       "address": {
-          "city": "Kraków",
-          "street": "Ostatnia 1C/A10"
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
       },
       "employees": "35+",
       "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
       "coordinates": "nie_mam_pojęica_co_tu_dać",
       "offers": [{
-          "key": 1,
-          "title": "Junior JavaScript Developer",
-          "salary": "5000 - 9000 pln",
-          "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
-          "remote": "Partly Remote",
-          "offerStatus": "new",
-          "description": "opis_stanowiska",
-          "photo": "link_do_zdjęcia"
-      }]
-  },
-  {
-      "key": 2,
-      "company": "BlueSoft",
-      "address": {
-          "city": "Warszawa",
-          "street": "Al. Jerozolimskie 96"
-      },
-      "employees": "650+",
-      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
-      "coordinates": "nie_mam_pojęica_co_tu_dać",
-      "offers": [{
-              "key": 1,
-              "title": "AWS Architect",
-              "salary": "17000 - 25000 pln",
-              "techStack": ["AWS", "English"],
-              "remote": "Fully Remote",
-              "offerStatus": "new",
-              "description": "opis_stanowiska",
-              "photo": "link_do_zdjęcia"
-          },
-          {
-              "key": 2,
-              "title": "Scrum Master",
-              "salary": "15000 - 20000 pln",
-              "techStack": ["Scrum", "Scrum Master", "English"],
-              "remote": "Fully Remote",
-              "offerStatus": "new",
-              "description": "opis_stanowiska",
-              "photo": "link_do_zdjęcia"
-          }
-      ]
-  },{
-    "key": 1,
-    "company": "Fingoweb",
-    "address": {
-        "city": "Kraków",
-        "street": "Ostatnia 1C/A10"
-    },
-    "employees": "35+",
-    "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
-    "coordinates": "nie_mam_pojęica_co_tu_dać",
-    "offers": [{
         "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
         "title": "Junior JavaScript Developer",
         "salary": "5000 - 9000 pln",
         "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
@@ -138,44 +35,53 @@ const App: React.FC = (): JSX.Element => {
         "offerStatus": "new",
         "description": "opis_stanowiska",
         "photo": "link_do_zdjęcia"
-    }]
-},
-{
-    "key": 2,
-    "company": "BlueSoft",
-    "address": {
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
         "city": "Warszawa",
         "street": "Al. Jerozolimskie 96"
-    },
-    "employees": "650+",
-    "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
-    "coordinates": "nie_mam_pojęica_co_tu_dać",
-    "offers": [{
-            "key": 1,
-            "title": "AWS Architect",
-            "salary": "17000 - 25000 pln",
-            "techStack": ["AWS", "English"],
-            "remote": "Fully Remote",
-            "offerStatus": "new",
-            "description": "opis_stanowiska",
-            "photo": "link_do_zdjęcia"
-        },
-        {
-            "key": 2,
-            "title": "Scrum Master",
-            "salary": "15000 - 20000 pln",
-            "techStack": ["Scrum", "Scrum Master", "English"],
-            "remote": "Fully Remote",
-            "offerStatus": "new",
-            "description": "opis_stanowiska",
-            "photo": "link_do_zdjęcia"
-        }
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+      {
+        "key": 2,
+        "title": "Scrum Master",
+        "salary": "15000 - 20000 pln",
+        "techStack": ["Scrum", "Scrum Master", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }
+      ]
+    }
     ]
-}
-]
   }
 
 
+  const links = state.offers.map(link => (
+    <Route path={link.offers[0].link}>
+      <WorkOffer
+        offers={state.offers} />
+    </Route>
+  ));
+
+  console.log(links);
 
 
 
@@ -186,7 +92,7 @@ const App: React.FC = (): JSX.Element => {
       <Switch>
         <Route path='/' exact={true}>
           <MainPage
-            offers={state.offers} />
+            templateOffer={state.offers} />
         </Route>
 
         <Route path='/user-signin'>
@@ -201,9 +107,9 @@ const App: React.FC = (): JSX.Element => {
           <EmployerSigninForm />
         </Route>
 
-        <Route path='/offer'>
-          <WorkOffer />
-        </Route>
+{links}
+
+
       </Switch>
 
 

@@ -1,14 +1,14 @@
 import styles from './workOfferHeader.module.scss'
 
-const WorkOfferHeader = () => {
+const WorkOfferHeader = ({ title, logo }) => {
 
 
     return (
         <div className={styles.componentContainer}>
             <div className={styles.aboutCompany}>
-                <div className={styles.logo}></div>
+                <div ><img src={logo} alt='logo-company' className={styles.logo} /></div>
                 <div className={styles.companyInfo}>
-                    <h3>Senior Product Manager</h3>
+                    <h3>{title}</h3>
                     <p>6906 Miramar Rd, Ste. 382, San Dieg</p>
                     <div>Fully Remote</div>
                 </div>
