@@ -7,7 +7,7 @@ import WorkOfferHeader from "./WorkOfferHeader/WorkOfferHeader";
 import WorkApply from "./WorkApply/WorkApply";
 import TechStackPanels from "./TechStackPanels/TechStackPanels";
 import Description from "./Description/Description";
-
+import {Route} from "react-router-dom"
 
 
 const WorkOffer = ({ offers }) => {
@@ -15,7 +15,7 @@ const WorkOffer = ({ offers }) => {
 
 
     const Offers = offers.map(offer => (
-
+<Route path={offer.offers[0].link}>
         <div className={styles.container}>
 
             <WorkOfferHeader
@@ -34,7 +34,7 @@ const WorkOffer = ({ offers }) => {
             <div className={styles.break}></div>
             <WorkApply />
         </div>
-
+        </Route>
     ));
 
 

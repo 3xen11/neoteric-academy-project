@@ -58,31 +58,371 @@ const App: React.FC = (): JSX.Element => {
         "description": "opis_stanowiska",
         "photo": "link_do_zdjęcia"
       },
-      {
-        "key": 2,
-        "title": "Scrum Master",
-        "salary": "15000 - 20000 pln",
-        "techStack": ["Scrum", "Scrum Master", "English"],
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
         "remote": "Fully Remote",
         "offerStatus": "new",
         "description": "opis_stanowiska",
         "photo": "link_do_zdjęcia"
-      }
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
+      ]
+    },{
+      "key": 1,
+      "company": "Fingoweb",
+      "address": {
+        "city": "Kraków",
+        "street": "Ostatnia 1C/A10"
+      },
+      "employees": "35+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149020.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/fingoweb-junior-javascript-developer",
+        "title": "Junior JavaScript Developer",
+        "salary": "5000 - 9000 pln",
+        "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
+        "remote": "Partly Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      }]
+    },
+    {
+      "key": 2,
+      "company": "BlueSoft",
+      "address": {
+        "city": "Warszawa",
+        "street": "Al. Jerozolimskie 96"
+      },
+      "employees": "650+",
+      "logo": "https://image.flaticon.com/icons/png/512/5149/5149075.png",
+      "coordinates": "nie_mam_pojęica_co_tu_dać",
+      "offers": [{
+        "key": 1,
+        "link": "/offer/bluesoft-aws-architect",
+        "title": "AWS Architect",
+        "salary": "17000 - 25000 pln",
+        "techStack": ["AWS", "English"],
+        "remote": "Fully Remote",
+        "offerStatus": "new",
+        "description": "opis_stanowiska",
+        "photo": "link_do_zdjęcia"
+      },
+
       ]
     }
     ]
   }
-
-
-  const links = state.offers.map(link => (
-    <Route path={link.offers[0].link}>
-      <WorkOffer
-        offers={state.offers} />
-    </Route>
-  ));
-
-  console.log(links);
-
 
 
   return (
@@ -106,9 +446,9 @@ const App: React.FC = (): JSX.Element => {
         <Route path='/employer-signin'>
           <EmployerSigninForm />
         </Route>
-
-{links}
-
+       
+      <WorkOffer
+        offers={state.offers} />
 
       </Switch>
 

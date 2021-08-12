@@ -1,3 +1,5 @@
+@use '../../Styles/variables.scss' as *;
+
 %flex--align-center {
     display: flex;
     align-items: center;
@@ -22,7 +24,7 @@
     .headerText {
         margin: 70px !important;
         font-size: 4.5rem;
-        color: gray;
+        color: $secondary-color;
     }
 
     .textfieldContainer {
@@ -31,7 +33,7 @@
 
         i {
             display: flex;
-            color: grey;
+            color: $secondary-color;
             font-size: 20px;
             margin-right: 15px;
             justify-content: center;
@@ -56,7 +58,7 @@
         margin-top: 40px;
         text-decoration: none;
         font-weight: bold;
-        color: pink;
+        color: $primary-color;
         font-size: 1.5rem;
     }
 
@@ -67,7 +69,7 @@
 @media (min-width: 1024px) {
 
     .container {
-        background-color: grey !important;
+        background-color: $brighter-secondary-color !important;
 
         &Card {
             width: 500px !important;

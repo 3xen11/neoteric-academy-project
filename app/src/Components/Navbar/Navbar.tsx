@@ -36,7 +36,7 @@ const Navbar = React.memo<ComponentProps>(({ className, children }) => {
             <div className={styles.linksButtonsContainer}>
 
                 <div className={styles.links}>
-                    <NavbarLink className={styles.linkOffers}>Offers</NavbarLink>
+                    <NavbarLink className={styles.offers}>Offers</NavbarLink>
                     <NavbarLink>Brand Stories</NavbarLink>
                     <NavbarLink>Geek</NavbarLink>
                     <NavbarLink>Matchmaking</NavbarLink>

@@ -1,3 +1,5 @@
+@use '../../../Styles/variables.scss' as *;
+
 .container {
     display: flex;
     width: 100%;
@@ -7,6 +9,7 @@
     .expandableButton {
         display: none !important;
         margin-left: 0.5% !important;
+
     }
 
     .expandableButtonHiding {
@@ -27,4 +30,5 @@
 
 .button {
     margin-right: 5px !important;
+    color: $secondary-color;
 }

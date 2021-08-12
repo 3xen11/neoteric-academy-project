@@ -1,3 +1,6 @@
+@use '../../../../../Styles/variables.scss' as *;
+
+
 .requirements{
 display: flex;
 
@@ -7,9 +10,11 @@ display: flex;
         padding: 0 5px;
         border-radius: 10px;
         margin-left: 5px;
-        border: 1px solid gray;
+        border: 1px solid $brighter-secondary-color;
+        color: $brighter-secondary-color;
     }
-    
+
+
     
     @media (min-width: 1024px) {
         .requirement {

@@ -1,3 +1,7 @@
+@use '../../../../Styles/variables.scss' as *;
+
+$green-color: rgb(27, 192, 27);
+
 .container {
     display: flex;
     height: 80px;
@@ -29,7 +33,7 @@ overflow: hidden;
                 font-size: 1.5rem;
                 margin: 5px 5px 5px 5px;
                 font-weight: 600;
-
+                color: $darkest-gray;
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
@@ -44,6 +48,7 @@ overflow: hidden;
                 align-self: flex-end;
                 font-size: 1.2rem;
                 align-self: flex-start;
+                color:  $darkest-gray;
 
                 .companyInfo {
                     display: none;
@@ -52,8 +57,9 @@ overflow: hidden;
                 }
 
                 .earningsMobile {
-                    color: rgb(0, 213, 0);
+                    color: $green-color;
                     font-size: 1.2rem;
+
                     
                 }
             }
@@ -73,8 +79,9 @@ overflow: hidden;
 
                 .earnings {
                     display: none;
-                    color: rgb(0, 213, 0);
+                    color: $green-color;
                     font-size: 1.5rem;
+                    padding:0 5px 3px 0 !important;
                 }
 
                 .offerStatus {
@@ -83,9 +90,9 @@ overflow: hidden;
                     font-size: 1.2rem;
                     padding: 0 5px;
                     border-radius: 10px;
-                    color: gray;
+                    color: $brighter-secondary-color;
                     height: 20px;
-                    background-color: rgba(189, 189, 189, 0.775);
+                    background-color: $brightest-gray;
                 }
             }
 
@@ -104,10 +111,10 @@ overflow: hidden;
                     margin: 5px 0px 5px 5px;
                     font-size: 1.2rem;
                     white-space: nowrap;
+                    color: $darkest-gray;
 
                     .companyInfo {
                         margin-right: 7px;
-                        // white-space: nowrap;
                     }
                 }
             }
@@ -134,14 +141,14 @@ overflow: hidden;
 
     .earnings {
         display: flex !important;
-        color: rgb(0, 213, 0);
+        color: $green-color;
         font-size: 2rem;
 
     }
 
     .earningsMobile {
         display: none !important;
-        color: rgb(0, 213, 0) !important;
+        color: $green-color !important;
         font-size: 2rem;
         white-space: nowrap;
     }

@@ -1,12 +1,18 @@
+@mixin width($width) {
+    width: $width !important;
+};
+
+
+
+
 #fadeMenu {
     margin: 50px 10px 0 0 !important;
 
     .card {
-        width: 330px !important;
-        
+        @include width(330px);
 
         .signinPopup {
-            width: 300px !important;
+            @include width(300px);
             margin-top: 20px;
 
             .buttonText {
@@ -14,7 +20,7 @@
             }
 
             .userLogo {
-                width: 30px;
+                @include width(30px);
                 height: 30px;
                 margin-right: 5px;
             }

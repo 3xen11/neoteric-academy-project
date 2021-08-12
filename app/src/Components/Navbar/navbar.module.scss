@@ -1,9 +1,11 @@
+@use '../../Styles/variables.scss' as *;
+
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid rgba(143, 143, 143, 0.616);
+    border-bottom: 1px solid $brighter-secondary-color;
     background-color: white;
 
     .logoMottoContainer {
@@ -15,15 +17,16 @@
             font-size: 2.5rem;
             text-decoration: none !important;
             font-weight: bold;
-            color: #202020cf !important;
+            color: $secondary-color !important;
         }
 
         .motto {
             display: none;
             align-items: center;
             margin-left: 5%;
-            width: 200px;
-            color: #808080ca;
+            width: 220px;
+            color: $brighter-secondary-color;
+            font-size: 1.1rem;
         }
     }
 
@@ -57,22 +60,21 @@
                 align-self: center !important;
                 height: 100% !important;
                 margin-left: 5%;
-                border-left: 1px solid gray !important;
+                border-left: 1px solid $brighter-secondary-color !important;
             }
         }
-
 
         .links {
             display: none;
             justify-content: flex-end;
             align-items: center;
+          
 
-            .linkOffers {
+            .offers {
                 text-align: center;
-                color: #ff5387 !important;
+                color: $primary-color;
             }
         }
-
     }
 }
 

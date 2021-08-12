@@ -40,7 +40,7 @@ const OfferTemplate = ({ logo, title, salary, city, remote, offerStatus, company
 
                         <div className={styles.requirements}>
 
-                            <TechOfferTemplate
+                            <TechOfferTemplate 
                                 techStack={techStacks} />
 
                             <div className={styles.companyInfosMobile}>
