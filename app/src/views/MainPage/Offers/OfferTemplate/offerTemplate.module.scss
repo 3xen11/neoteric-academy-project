@@ -1,4 +1,4 @@
-@use '../../../../Styles/variables.scss' as *;
+@use '../../../../Styles/variables.scss'as *;
 
 $green-color: rgb(27, 192, 27);
 
@@ -10,7 +10,7 @@ $green-color: rgb(27, 192, 27);
     margin: 5px auto;
     border-radius: 7px;
     box-shadow: 3px 2px 10px -3px #000000;
-overflow: hidden;
+    overflow: hidden;
 
     .logo {
         display: flex;
@@ -48,19 +48,18 @@ overflow: hidden;
                 align-self: flex-end;
                 font-size: 1.2rem;
                 align-self: flex-start;
-                color:  $darkest-gray;
+                color: $darkest-gray;
 
                 .companyInfo {
                     display: none;
                     margin-right: 7px;
-          
+
                 }
 
                 .earningsMobile {
                     color: $green-color;
                     font-size: 1.2rem;
-
-                    
+                    font-weight: bold;
                 }
             }
         }
@@ -75,13 +74,14 @@ overflow: hidden;
                 align-items: center;
                 margin: 5px 5px 5px 5px;
                 justify-content: flex-end;
-               
+
 
                 .earnings {
                     display: none;
                     color: $green-color;
+                    font-weight: bold;
                     font-size: 1.5rem;
-                    padding:0 5px 3px 0 !important;
+                    padding: 0 5px 3px 0 !important;
                 }
 
                 .offerStatus {
@@ -101,9 +101,9 @@ overflow: hidden;
                 margin: 5px 5px 5px 5px;
                 justify-content: flex-end;
                 font-size: 1.2rem;
-                
 
-               
+
+
 
                 .companyInfosMobile {
                     display: flex;
@@ -142,6 +142,7 @@ overflow: hidden;
     .earnings {
         display: flex !important;
         color: $green-color;
+        font-weight: bold;
         font-size: 2rem;
 
     }
@@ -149,6 +150,7 @@ overflow: hidden;
     .earningsMobile {
         display: none !important;
         color: $green-color !important;
+        font-weight: bold;
         font-size: 2rem;
         white-space: nowrap;
     }

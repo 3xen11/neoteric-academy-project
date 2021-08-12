@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const OfferTemplate = ({ logo, title, salary, city, remote, offerStatus, company, techStacks, link }) => {
+const OfferTemplate = ({ logo, title, lowest, highest, city, remote, offerStatus, company, techStacks, link, currency }) => {
 
     return (
         <Link to={link} style={{ textDecoration: 'none' }}>
@@ -27,20 +27,20 @@ const OfferTemplate = ({ logo, title, salary, city, remote, offerStatus, company
                             <span className={styles.companyInfo}> {company}</span>
                             <span className={styles.companyInfo}> {city}</span>
                             <span className={styles.companyInfo}> {remote}</span>
-                            <span className={styles.earningsMobile} >{salary}</span>
+                            <span className={styles.earningsMobile} >{lowest} - {highest} {currency}</span>
                         </div>
                     </div>
 
                     <div className={styles.rightInfo}>
 
                         <div className={styles.offerInfo}>
-                            <span className={styles.earnings} >{salary}</span>
+                            <span className={styles.earnings} >{lowest} - {highest} {currency}</span>
                             <div className={styles.offerStatus}>{offerStatus}</div>
                         </div>
 
                         <div className={styles.requirements}>
 
-                            <TechOfferTemplate 
+                            <TechOfferTemplate
                                 techStack={techStacks} />
 
                             <div className={styles.companyInfosMobile}>

@@ -1,19 +1,21 @@
 import styles from './workOfferHeader.module.scss'
 
-const WorkOfferHeader = ({ title, logo }) => {
+const WorkOfferHeader = ({ title, logo, street, city, remote, lowest, highest, currency, payment, agreement }) => {
 
 
     return (
         <div className={styles.componentContainer}>
             <div className={styles.aboutCompany}>
-                <div ><img src={logo} alt='logo-company' className={styles.logo} /></div>
+                <div className={styles.logoContainer} ><img src={logo} alt='logo-company' className={styles.logo} /></div>
                 <div className={styles.companyInfo}>
-                    <h3>{title}</h3>
-                    <p>6906 Miramar Rd, Ste. 382, San Dieg</p>
-                    <div>Fully Remote</div>
+                    <h3 className={styles.title}>{title}</h3>
+                    <p className={styles.street}>{`${street}, ${city} `}</p>
+                    <div>{remote}</div>
                 </div>
             </div>
-            <p> <h3>6 500 - 8 500 USD net/month - B2B</h3> </p>
+            <p>
+                <h3>{lowest} - {highest} {currency} <span className={styles.agreementStyle}> {payment} - {agreement}</span></h3>
+            </p>
         </div>
     )
 }

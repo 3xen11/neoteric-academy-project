@@ -7,7 +7,7 @@ import styles from './filterItems.module.scss'
 //IMPORT CLASSNAMES
 import classNames from "classnames"
 
-
+import TechnologyButtons from '../Filter/TechnologyButtons/TechnologyButtons'
 
 
 
@@ -21,8 +21,8 @@ const FilterItems = ({ className }) => {
         <div className={classValue}>
 
             <OutlinedButton className={styles.button}>Lupa</OutlinedButton>
-            <OutlinedButton className={styles.expandableButton}>Location 🠗</OutlinedButton>
-            {/*rozwijany button*/}
+            <OutlinedButton className={styles.expandableButton}>Location ˅</OutlinedButton>
+
 
             <div className={styles.expandableButtonHiding}>
                 <OutlinedButton className={styles.button}>Location</OutlinedButton>
@@ -31,6 +31,8 @@ const FilterItems = ({ className }) => {
                 <OutlinedButton className={styles.button}>Latest</OutlinedButton>
             </div>
 
+            <TechnologyButtons></TechnologyButtons>
+            <OutlinedButton className={styles.moreFiltersButton}> <i className="fas fa-filter"></i>More filters ˅</OutlinedButton>
         </div>
     )
 }

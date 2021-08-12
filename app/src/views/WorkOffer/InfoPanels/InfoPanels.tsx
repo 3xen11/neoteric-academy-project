@@ -5,7 +5,7 @@ import EmployeeLogo from '../../../assets/imgPanels/employee.svg'
 import ExpirienceLogo from '../../../assets/imgPanels/expirience.svg'
 import TimeLogo from '../../../assets/imgPanels/time.svg'
 
-const InfoPanels = ({ company }) => {
+const InfoPanels = ({ company, companySize, expirience, offerStatus }) => {
 
     return (
         <div className={styles.infoPanels}>
@@ -14,8 +14,8 @@ const InfoPanels = ({ company }) => {
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>{company}</div>
-                        <div>company name</div>
+                        <div className={styles.informations}>{company}</div>
+                        <div className={styles.headerInformations}>company name</div>
                     </div>
                 }>
                 <img
@@ -29,8 +29,8 @@ const InfoPanels = ({ company }) => {
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>20-50</div>
-                        <div>company size</div>
+                        <div className={styles.informations}>{companySize}</div>
+                        <div className={styles.headerInformations}>company size</div>
                     </div>
                 } >  <img
                     src={EmployeeLogo}
@@ -42,8 +42,8 @@ const InfoPanels = ({ company }) => {
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>Senior</div>
-                        <div>EXP. lvl</div>
+                        <div className={styles.informations}>{expirience}</div>
+                        <div className={styles.headerInformations}>EXP. lvl</div>
                     </div>
                 } > <img
                     src={ExpirienceLogo}
@@ -55,8 +55,8 @@ const InfoPanels = ({ company }) => {
                 className={styles.offerPanel}
                 panelText={
                     <div>
-                        <div>New</div>
-                        <div>Added</div>
+                        <div className={styles.informations}>{offerStatus}</div>
+                        <div className={styles.headerInformations}>Added</div>
                     </div>
                 } > <img
                     src={TimeLogo}

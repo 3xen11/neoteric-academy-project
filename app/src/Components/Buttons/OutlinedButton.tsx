@@ -9,11 +9,12 @@ import styles from './buttons.module.scss'
 
 //IMPORT CLASSNAMES
 import classNames from 'classnames'
+import { ReactNode } from 'react';
 
 
 
 type ComponentProps = {
-    readonly children: string,
+    readonly children: ReactNode,
     readonly className?: string,
     readonly onClick?: any,
 }
