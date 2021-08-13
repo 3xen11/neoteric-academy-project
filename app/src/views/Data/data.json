@@ -1,54 +1,56 @@
 [{
+    "key": 1,
+    "company": "DevsData LLC",
+    "address": {
+      "city": "Warszawa",
+      "street": "Aleje Jerozolimskie"
+    },
+    "companySize": "40",
+    "coordinates": "koordynaty",
+    "logo": "https://image.flaticon.com/icons/png/512/4943/4943325.png",
+
+    "offers": [{
         "id": 1,
-        "company": "Fingoweb",
-        "address": {
-            "city": "Kraków",
-            "street": "Ostatnia 1C/A10"
+        "link": "/offer/devsdata-llc-data-engineer", 
+        "title": "Data Engineer (REMOTE)",
+        "salary": {
+            "lowestPrice": "32 000",
+            "highestPrice": "38 000",
+            "currency": "PLN",
+            "payment": "net/month",
+            "agreement": "B2B"
         },
-        "employees": "35+",
-        "logo": "link_do_zdjęcia",
-        "coordinates": "nie_mam_pojęica_co_tu_dać",
-        "offers": [{
-            "id": 1,
-            "title": "Junior JavaScript Developer",
-            "salary": "5000 - 9000 pln",
-            "techStack": ["JavaScript", "React", "CSS3", "HTML", "GraphQL", "Vue.js"],
-            "remote": "Partly Remote",
-            "offerStatus": "new",
-            "description": "opis_stanowiska",
-            "photo": "link_do_zdjęcia"
-        }]
+        "techStack": {
+            "skills":  ["SQL", "Python", "C++", "AWS"],
+            "skillsLvl": ["advanced", "advanced", "regular", "regular"]
+        },
+        "remote": "Fully Remote",
+        "offerStatus": "New",
+        "description": "... We are looking for a Data Engineer for an algorithmic trading and asset management company headquartered in Singapore, with technology development offices in Singapore and Amsterdam, to play a lead role in how to gather and digest data. You’ll work closely with co-founders to source and analyse data to enable the company to systematically improve the decision-making process and utilize data to drive new business decisions. ...",
+        "photo": "link_do_zdjęcia",
+        "expirience": "Senior"
     },
     {
         "id": 2,
-        "company": "BlueSoft",
-        "address": {
-            "city": "Warszawa",
-            "street": "Al. Jerozolimskie 96"
+        "link": "/offer/devsdata-llc-data-engineer", 
+        "title": "Data Engineer (REMOTE)",
+        "salary": {
+            "lowestPrice": "32 000",
+            "highestPrice": "38 000",
+            "currency": "PLN",
+            "payment": "net/month",
+            "agreement": "B2B"
         },
-        "employees": "650+",
-        "logo": "link_do_zdjęcia",
-        "coordinates": "nie_mam_pojęica_co_tu_dać",
-        "offers": [{
-                "id": 2,
-                "title": "AWS Architect",
-                "salary": "17000 - 25000 pln",
-                "techStack": ["AWS"],
-                "remote": "Fully Remote",
-                "offerStatus": "new",
-                "description": "opis_stanowiska",
-                "photo": "link_do_zdjęcia"
-            },
-            {
-                "id": 3,
-                "title": "Scrum Master",
-                "salary": "15000 - 20000 pln",
-                "techStack": ["Scrum", "Scrum Master", "English"],
-                "remote": "Fully Remote",
-                "offerStatus": "new",
-                "description": "opis_stanowiska",
-                "photo": "link_do_zdjęcia"
-            }
+        "techStack": {
+            "skills":  ["SQL", "Python", "C++", "AWS"],
+            "skillsLvl": ["advanced", "advanced", "regular", "regular"]
+        },
+        "remote": "Fully Remote",
+        "offerStatus": "New",
+        "description": "... We are looking for a Data Engineer for an algorithmic trading and asset management company headquartered in Singapore, with technology development offices in Singapore and Amsterdam, to play a lead role in how to gather and digest data. You’ll work closely with co-founders to source and analyse data to enable the company to systematically improve the decision-making process and utilize data to drive new business decisions. ...",
+        "photo": "link_do_zdjęcia",
+        "expirience": "Senior"
+    }
         ]
     }
 ]
